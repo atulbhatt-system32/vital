@@ -2,6 +2,10 @@ section.hero_section {
   display: flex;
   height: 200px;
 }
+
+.hero_section.desktop {
+  display: none;
+}
 .hero_section.mobile {
   background-image: url('../../assets/img/home_hero_bg.svg');
   background-repeat: no-repeat;
@@ -26,5 +30,31 @@ section.hero_section {
 @media only screen and (min-width: 768px) {
   .hero_section.mobile {
     display: none;
+  }
+  .hero_section.desktop {
+    display: inherit;
+    background-image: url('../../assets/img/home_hero_bg_pc.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: 100%;
+    padding-bottom: 50%;
+    width: 100%;
+  }
+
+  .gradient_btn_wrapper {
+    align-self: flex-start;
+    width: 100%;
+    max-width: 10rem;
+  }
+
+  .hero_section_content {
+    padding: 8% 8% 0 10%;
+    width: 50%;
+  }
+  .card_wrapper {
+    padding: 1rem 0;
+  }
+  .card_text {
+    padding-bottom: 1rem;
   }
 }

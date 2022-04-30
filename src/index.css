@@ -43,6 +43,9 @@ code {
   align-items: center;
   padding: 1.5rem;
 }
+.nav_desktop {
+  display: none;
+}
 
 .brand_name {
   font-family: sans-serif;
@@ -51,36 +54,44 @@ code {
   color: var(--primary-text-color);
 }
 
-/* Hero Section */
-section.hero_section {
-  display: flex;
-  height: 200px;
-}
-.hero_section.mobile {
-  background-image: url('./assets/img/home_hero_bg.svg');
-  background-repeat: no-repeat;
-  background-size: contain;
-  height: auto;
-}
-.hero_section_text_wrapper {
-  padding: 4.5rem 0 0 2rem;
-}
-
-.hero_section_content {
-  width: 100%;
-}
-
-.card_wrapper {
-  padding: 1rem;
-  text-align: center;
-}
-
-.card_text {
-  padding-bottom: 1rem;
-}
-
 @media only screen and (min-width: 768px) {
-  .hero_section.mobile {
+  .nav_mobile {
     display: none;
+  }
+  .nav_desktop {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5% 3.5% 1.5% 10%;
+    background: rgba(255, 255, 255, 1);
+  }
+
+  .brand_logo_wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .nav_links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem;
+  }
+
+  .links_wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 1.5rem;
+  }
+
+  .nav_links a {
+    display: flex;
+    padding: 1rem;
+    min-width: fit-content;
+  }
+
+  .connect_wrapper {
+    min-width: 10rem;
   }
 }

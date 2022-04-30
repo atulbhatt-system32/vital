@@ -26,7 +26,7 @@ const Home = () => {
         </section>
 
         <section className={[styles.hero_section, styles.desktop].join(' ')}>
-          <div className='hero_section_content'></div>
+          <div className={styles.hero_section_content}></div>
         </section>
         {/* HERO SECTION END */}
       </main>

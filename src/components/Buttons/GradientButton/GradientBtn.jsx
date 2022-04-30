@@ -1,7 +1,7 @@
-import './GradientBtn.css';
+import styles from './GradientBtn.module.scss';
 const GradientBtn = (props) => {
   return (
-    <button type='button' className='gradient_btn'>
+    <button type='button' className={styles.gradient_btn}>
       <span className='gradient_btn-text'>{props.text}</span>
     </button>
   );

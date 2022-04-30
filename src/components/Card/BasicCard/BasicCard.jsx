@@ -1,10 +1,9 @@
-import './BasicCard.css';
+import styles from './BasicCard.module.scss';
 
 const BasicCard = (props) => {
-  console.log(props, 'props');
   return (
-    <div className='card'>
-      <div className='card_body'>{props.children}</div>
+    <div className={styles.card}>
+      <div className={styles.card_body}>{props.children}</div>
     </div>
   );
 };

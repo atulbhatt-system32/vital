@@ -1,0 +1,32 @@
+section.hero_section {
+  display: flex;
+  height: 200px;
+}
+.hero_section.mobile {
+  background-image: url('../../assets/img/home_hero_bg.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: auto;
+}
+.hero_section_text_wrapper {
+  padding: 4.5rem 0 0 2rem;
+}
+
+.hero_section_content {
+  width: 100%;
+}
+
+.card_wrapper {
+  padding: 1rem;
+  text-align: center;
+}
+
+.card_text {
+  padding-bottom: 1rem;
+}
+
+@media only screen and (min-width: 768px) {
+  .hero_section.mobile {
+    display: none;
+  }
+}

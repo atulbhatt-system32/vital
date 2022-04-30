@@ -13,6 +13,7 @@ function App() {
         </nav>
       </header>
       <main>
+        {/* HERO SECTION */}
         <section className='hero_section mobile'>
           <div className='hero_section_content'>
             <div className='hero_section_text_wrapper'>
@@ -29,6 +30,11 @@ function App() {
             </div>
           </div>
         </section>
+
+        <section className='hero_section desktop'>
+          <div className='hero_section_content'></div>
+        </section>
+        {/* HERO SECTION END */}
       </main>
     </div>
   );

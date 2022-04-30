@@ -78,3 +78,9 @@ section.hero_section {
 .card_text {
   padding-bottom: 1rem;
 }
+
+@media only screen and (min-width: 768px) {
+  .hero_section.mobile {
+    display: none;
+  }
+}

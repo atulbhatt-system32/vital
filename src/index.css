@@ -44,6 +44,7 @@ code {
   align-items: center;
   padding: 1.5rem;
   position: relative;
+  /* border-bottom: 1px #b2b2b2; {not Applying}*/
 }
 
 /* Added */
@@ -69,6 +70,8 @@ code {
   font-size: 1.6rem;
   font-weight: normal;
   color: var(--primary-text-color);
+  /* padding added */
+  padding-left: 8px;
 }
 
 @media only screen and (min-width: 768px) {

@@ -43,7 +43,23 @@ code {
   justify-content: center;
   align-items: center;
   padding: 1.5rem;
+  position: relative;
 }
+
+/* Added */
+.nav_mobile::after {
+  content: "\2807";
+  font-size: 24px;
+  position: absolute;
+  right: 10px;
+  color: #b2b2b2;
+}
+.brand_logo_wrapper_mob {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* ************************* */
 .nav_desktop {
   display: none;
 }

@@ -7,7 +7,7 @@ section.hero_section {
   display: none;
 }
 .hero_section.mobile {
-  background-image: url('../../assets/img/home_hero_bg.svg');
+  background-image: url("../../assets/img/home_hero_bg.svg");
   background-repeat: no-repeat;
   background-size: contain;
   height: auto;
@@ -27,13 +27,95 @@ section.hero_section {
   }
 }
 
+section.how_section {
+  display: flex;
+}
+.how_section.desktop {
+  display: none;
+}
+
+.how_section.mobile {
+  .how_section_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+  }
+
+  .how_steps_wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 2rem;
+  }
+  .how_step_bg {
+    display: flex;
+    justify-content: center;
+  }
+  .how_step1,
+  .how_step2,
+  .how_step3,
+  .how_step4 {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+  }
+
+  .step_content {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 10rem;
+    top: 15%;
+  }
+  .how_step1 {
+    position: relative;
+    z-index: 10;
+  }
+
+  .how_step2 {
+    position: relative;
+    top: -9.5%;
+    z-index: 9;
+  }
+  .how_step3 {
+    position: relative;
+    top: -19%;
+    z-index: 8;
+  }
+  .how_step4 {
+    position: relative;
+    top: -33%;
+    z-index: 11;
+    .step_content {
+      top: 12%;
+    }
+  }
+}
+
+section.curved_image_section {
+  display: flex;
+  .curved_image_card img {
+    object-fit: cover;
+    width: 100%;
+    border-top-right-radius: 10rem;
+    max-height: 70%;
+  }
+}
 @media only screen and (min-width: 768px) {
   .hero_section.mobile {
     display: none;
   }
   .hero_section.desktop {
     display: inherit;
-    background-image: url('../../assets/img/home_hero_bg_pc.svg');
+    background-image: url("../../assets/img/home_hero_bg_pc.svg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position-y: 100%;

@@ -1,17 +1,23 @@
-import { hero_text } from '../../assets/img';
-import { BasicCard, GradientBtn } from '../../components';
+import {
+  hero_text,
+  how_1_mobile,
+  how_2_mobile,
+  how_3_mobile,
+  step1_notebook,
+} from "../../assets/img";
+import { BasicCard, GradientBtn } from "../../components";
 
-import styles from './Home.module.scss';
+import styles from "./Home.module.scss";
 
 const Home = () => {
   return (
-    <div className='home'>
+    <div className="home">
       <main>
         {/* HERO SECTION */}
-        <section className={[styles.hero_section, styles.mobile].join(' ')}>
+        <section className={[styles.hero_section, styles.mobile].join(" ")}>
           <div className={styles.hero_section_content}>
             <div className={styles.hero_section_text_wrapper}>
-              <img src={hero_text} alt='your fully decentralized money pot' />
+              <img src={hero_text} alt="your fully decentralized money pot" />
             </div>
             <div className={styles.card_wrapper}>
               <BasicCard>
@@ -19,17 +25,17 @@ const Home = () => {
                   Create, share, participate securely in a transparent and
                   automated way
                 </span>
-                <GradientBtn text='Get Started' />
+                <GradientBtn text="Get Started" />
               </BasicCard>
             </div>
           </div>
         </section>
 
-        <section className={[styles.hero_section, styles.desktop].join(' ')}>
+        <section className={[styles.hero_section, styles.desktop].join(" ")}>
           <div className={styles.hero_section_content}>
             <div className={styles.hero_section_left}>
               <div className={styles.hero_section_text_wrapper}>
-                <img src={hero_text} alt='your fully decentralized money pot' />
+                <img src={hero_text} alt="your fully decentralized money pot" />
               </div>
               <div className={styles.card_wrapper}>
                 <BasicCard>
@@ -38,7 +44,7 @@ const Home = () => {
                     automated way
                   </span>
                   <div className={styles.gradient_btn_wrapper}>
-                    <GradientBtn text='Create' />
+                    <GradientBtn text="Create" />
                   </div>
                 </BasicCard>
               </div>
@@ -46,6 +52,78 @@ const Home = () => {
           </div>
         </section>
         {/* HERO SECTION END */}
+
+        {/* How Section Begins*/}
+        <section className={[styles.how_section, styles.mobile].join(" ")}>
+          <div className={styles.how_section_content}>
+            <div className={styles.how_section_heading}>
+              <span>How does this work?</span>
+            </div>
+            <div className={styles.how_steps_wrapper}>
+              <div className={styles.how_step1}>
+                <div className={styles.how_step_bg}>
+                  <img src={how_1_mobile} alt="step1" />
+                  <div className={styles.step_content}>
+                    <img src={step1_notebook} alt="step1" />
+                    <span>Create</span>
+                    <span>
+                      Create & personalize your money pot in just a few clicks
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div className={styles.how_step2}>
+                <div className={styles.how_step_bg}>
+                  <img src={how_2_mobile} alt="step2" />
+                  <div className={styles.step_content}>
+                    <img src={step1_notebook} alt="step2" />
+                    <span>Create</span>
+                    <span>
+                      Create & personalize your money pot in just a few clicks
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div className={styles.how_step3}>
+                <div className={styles.how_step_bg}>
+                  <img src={how_3_mobile} alt="step3" />
+                  <div className={styles.step_content}>
+                    <img src={step1_notebook} alt="step3" />
+                    <span>Create</span>
+                    <span>
+                      Create & personalize your money pot in just a few clicks
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div className={styles.how_step4}>
+                <div className={styles.how_step_bg}>
+                  <div className={styles.step_content}>
+                    <img src={step1_notebook} alt="step3" />
+                    <span>Create</span>
+                    <span>
+                      Create & personalize your money pot in just a few clicks
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        {/* How Section ends */}
+
+        {/* Curved Image Section */}
+
+        <section className={styles.curved_image_section}>
+          <div className={styles.curved_image_card}>
+            <img
+              src="https://images.unsplash.com/photo-1473649085228-583485e6e4d7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1332&q=80"
+              alt="kids school"
+            />
+          </div>
+        </section>
+
+        {/* Curved Image SEction Ends */}
       </main>
     </div>
   );

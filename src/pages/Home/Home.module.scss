@@ -23,10 +23,40 @@ section.hero_section {
     }
     .card_text {
       padding-bottom: 1rem;
+      // weight, size & height:
+      font-weight: 500;
+      font-size: 16.85px;
+      line-height: 21px;
+      // *****************************
     }
   }
 }
+// ABOUT:
+.main {
+  &_about {
+    padding: 3.5rem 1rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  &_head {
+    padding-bottom: 15px;
+    margin: 0;
+  }
+  &_text {
+    font-weight: 400, Regular;
+    line-height: 24px;
+    text-align: center;
+    margin: 0;
+  }
+  &_btn {
+    padding: 22px 0;
+    // background-color: orangered;
+  }
+}
 
+// ************************************
 @media only screen and (min-width: 768px) {
   .hero_section.mobile {
     display: none;

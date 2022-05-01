@@ -6,7 +6,7 @@ import {
   step1_notebook,
 } from "../../assets/img";
 import { BasicCard, GradientBtn } from "../../components";
-
+import Carousel from "../../components/Carousel/Carousel";
 import styles from "./Home.module.scss";
 
 const Home = () => {
@@ -41,8 +41,8 @@ const Home = () => {
                 <BasicCard>
                   <span className={styles.card_text}>
                     Create, share, participate securely in a transparent and
-                    automated way
-                  </span>
+                    automated way{" "}
+                  </span>{" "}
                   <div className={styles.gradient_btn_wrapper}>
                     <GradientBtn text="Create" />
                   </div>
@@ -52,6 +52,55 @@ const Home = () => {
           </div>
         </section>
         {/* HERO SECTION END */}
+
+        {/* About Section Begins */}
+        <section className={styles.main_about}>
+          <h2 className={styles.main_head}>About us</h2>
+          <p className={styles.main_text}>
+            Vital is a fully decentralized application allowing anyone to create
+            a fundraising project for all types of needs:{" "}
+            <strong>Wedding, birthday, retirement, medical</strong> support or
+            simply for <strong>common expenses.</strong>
+          </p>
+          <p className={styles.main_text}>
+            Built on the Elrond blockchain, Vital is fully governed by Smart
+            Contracts that provide transparency and security for our users.Our
+            business model allows us to let you spend your kitty for free by
+            spending it with one of our partners or by participating in our
+            staking program.
+          </p>
+
+          <div className={styles.main_btn}>
+            <GradientBtn text="How does this work?" />
+          </div>
+        </section>
+        <section className={styles.main_carousel}>
+          <h2 className={styles.carousel_head}>Popular Projects</h2>
+          <Carousel />
+          <div className={styles.wrap_link}>
+            <div className={styles.carousel_link}>
+              <a href="*" className={styles.circle}>
+                .
+              </a>
+              <a
+                href="*"
+                className={[styles.circle, styles.circle_active].join(" ")}
+              >
+                .
+              </a>
+              <a href="*" className={styles.circle}>
+                .
+              </a>
+              <a href="*" className={styles.circle}>
+                .
+              </a>
+              <a href="*" className={styles.circle}>
+                .
+              </a>
+            </div>
+          </div>
+        </section>
+        {/* About Section Ends */}
 
         {/* How Section Begins*/}
         <section className={[styles.how_section, styles.mobile].join(" ")}>

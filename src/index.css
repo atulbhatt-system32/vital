@@ -15,9 +15,10 @@ html {
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+    sans-serif; */
+  font-family: "Raleway", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -27,14 +28,14 @@ a {
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
 
 /* Extra CSS */
 @font-face {
   font-family: Segoe UI;
-  src: url('./assets/fonts/SEGOEUI.TTF');
+  src: url("./assets/fonts/SEGOEUI.TTF");
 }
 
 .nav_mobile {
@@ -42,7 +43,24 @@ code {
   justify-content: center;
   align-items: center;
   padding: 1.5rem;
+  position: relative;
+  /* border-bottom: 1px #b2b2b2; {not Applying}*/
 }
+
+/* Added */
+.nav_mobile::after {
+  content: "\2807";
+  font-size: 24px;
+  position: absolute;
+  right: 10px;
+  color: #b2b2b2;
+}
+.brand_logo_wrapper_mob {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* ************************* */
 .nav_desktop {
   display: none;
 }
@@ -52,6 +70,8 @@ code {
   font-size: 1.6rem;
   font-weight: normal;
   color: var(--primary-text-color);
+  /* padding added */
+  padding-left: 8px;
 }
 
 @media only screen and (min-width: 768px) {

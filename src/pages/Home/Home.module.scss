@@ -23,7 +23,59 @@ section.hero_section {
     }
     .card_text {
       padding-bottom: 1rem;
+      // weight, size & height:
+      font-weight: 500;
+      font-size: 16.85px;
+      line-height: 21px;
+      // *****************************
     }
+  }
+}
+.main_carousel {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrap_link {
+  padding: 45.5px 0;
+}
+.carousel_link {
+  display: flex;
+  gap: 6.48px;
+}
+.circle {
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  border: 1px solid #102f35;
+}
+.circle_active {
+  background-color: #102f35;
+}
+
+// ABOUT:
+.main {
+  &_about {
+    padding: 3.5rem 1rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  &_head {
+    padding-bottom: 15px;
+    margin: 0;
+  }
+  &_text {
+    font-weight: 400, Regular;
+    line-height: 24px;
+    text-align: center;
+    margin: 0;
+  }
+  &_btn {
+    padding: 22px 0;
   }
 }
 
@@ -109,6 +161,7 @@ section.curved_image_section {
     max-height: 70%;
   }
 }
+// ************************************
 @media only screen and (min-width: 768px) {
   .hero_section.mobile {
     display: none;

@@ -31,6 +31,30 @@ section.hero_section {
     }
   }
 }
+.main_carousel {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrap_link {
+  padding: 45.5px 0;
+}
+.carousel_link {
+  display: flex;
+  gap: 6.48px;
+}
+.circle {
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  border: 1px solid #102f35;
+}
+.circle_active {
+  background-color: #102f35;
+}
+
 // ABOUT:
 .main {
   &_about {
@@ -52,7 +76,6 @@ section.hero_section {
   }
   &_btn {
     padding: 22px 0;
-    // background-color: orangered;
   }
 }
 

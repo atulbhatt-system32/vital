@@ -66,10 +66,31 @@ const Home = () => {
             <GradientBtn text="How does this work?" />
           </div>
         </section>
-        <section className="main_carousel">
-          <h2 className="main_carousel_head">Popular Projects</h2>
+        <section className={styles.main_carousel}>
+          <h2 className={styles.carousel_head}>Popular Projects</h2>
           <Carousel />
-          {/* <div classNa></div> */}
+          <div className={styles.wrap_link}>
+            <div className={styles.carousel_link}>
+              <a href="*" className={styles.circle}>
+                .
+              </a>
+              <a
+                href="*"
+                className={[styles.circle, styles.circle_active].join(" ")}
+              >
+                .
+              </a>
+              <a href="*" className={styles.circle}>
+                .
+              </a>
+              <a href="*" className={styles.circle}>
+                .
+              </a>
+              <a href="*" className={styles.circle}>
+                .
+              </a>
+            </div>
+          </div>
         </section>
       </main>{" "}
     </div>

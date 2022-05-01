@@ -289,7 +289,7 @@ section.curved_image_section .curved_image_card img {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
-    padding: 5% 0;
+    padding: 10% 0;
     width: 100%;
   }
   .main_about_left .main_about_left_content {

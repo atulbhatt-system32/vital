@@ -1,0 +1,38 @@
+.ocassion {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  &_content_wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: -45px;
+  }
+  &_title {
+    font-weight: 700;
+    line-height: 18.78px;
+    color: #2f455c;
+    padding-bottom: 7px;
+  }
+  &_description_first {
+    font-weight: 500;
+    line-height: 12.91px;
+    color: #2f455c;
+    font-size: 11px;
+    text-align: center;
+    margin: 0;
+  }
+  &_description_second {
+    font-weight: 500;
+    line-height: 12.91px;
+    color: #2f455c;
+    font-size: 11px;
+    text-align: center;
+    margin: 0;
+  }
+  &_btn {
+    padding-top: 29px;
+  }
+}

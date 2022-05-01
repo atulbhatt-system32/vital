@@ -55,6 +55,21 @@ section.hero_section {
   background-color: #102f35;
 }
 
+.main_ocassion {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  background-color: #f9fcfc;
+  &_name {
+    font-size: 23px;
+    font-weight: 700;
+    text-align: center;
+    padding-bottom: 10px;
+  }
+}
+
 // ABOUT:
 .main {
   &_about {

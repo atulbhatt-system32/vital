@@ -9,7 +9,9 @@ import { BasicCard, GradientBtn } from "../../components";
 import Carousel from "../../components/Carousel/Carousel";
 import AdvanceCard from "../../components/Card/AdvanceCard/AdvanceCard";
 import styles from "./Home.module.scss";
-
+import Play from "../../assets/img/play.svg";
+import Charity from "../../assets/img/charity.svg";
+import Ocassion from "../../components/Ocassion/Ocassion.js";
 const Home = () => {
   return (
     <div className="home">
@@ -176,8 +178,56 @@ const Home = () => {
         {/* Curved Image SEction Ends */}
 
         <section className={styles.main_advance_cards}>
-          <AdvanceCard />
-          <AdvanceCard />
+          <AdvanceCard
+            title="Personal projects"
+            img={Play}
+            description_first="Create your kitty for all types of needs: 
+            Wedding, birthday, retirement, medical 
+            support or simply for common expenses. "
+            description_second="And invite your friends, family or 
+            entourage to participate in the 
+            simplest way"
+            text="View all personal projects"
+          />
+          <AdvanceCard
+            title="Charitable associations"
+            img={Charity}
+            description_first="Participate in the remarkable work of these 
+            associations defending forgotten causes of 
+            this world.All the associations present on Vital 
+            are certified, and all transactions are 
+            governed by Smart Contracts which ensure 
+            reliability, transparency and security."
+            text="See all charities"
+          />
+        </section>
+        <section className={styles.main_ocassion}>
+          <span className={styles.main_ocassion_name}>
+            Birthday Party And Wedding
+          </span>
+          <Ocassion />
+          <div className={styles.wrap_link}>
+            <div className={styles.carousel_link}>
+              <a href="*" className={styles.circle}>
+                .
+              </a>
+              <a
+                href="*"
+                className={[styles.circle, styles.circle_active].join(" ")}
+              >
+                .
+              </a>
+              <a href="*" className={styles.circle}>
+                .
+              </a>
+              <a href="*" className={styles.circle}>
+                .
+              </a>
+              <a href="*" className={styles.circle}>
+                .
+              </a>
+            </div>
+          </div>
         </section>
       </main>
     </div>

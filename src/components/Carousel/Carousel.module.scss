@@ -1,12 +1,11 @@
 .carousel {
-  border: 1px solid #000;
   padding: 12px 20px;
 
   &_wrapper {
-    border: 1px solid #000;
-    // background-color: orangered;
+    background-color: #fff;
     border-radius: 40px;
     overflow: hidden;
+    filter: drop-shadow(0px 15px 30px rgba(75, 75, 75, 0.302));
   }
   &_img {
     width: 100%;
@@ -42,6 +41,7 @@
     border-color: linear-gradient(270deg, #34f2c6 2.2%, #1ecef7 100%);
     padding: 4px;
     border-radius: 100px;
+    filter: drop-shadow(0px 2px px rgba(75, 75, 75, 0.302));
   }
   &_bar {
     border-radius: 100px;

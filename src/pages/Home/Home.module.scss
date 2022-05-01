@@ -56,6 +56,9 @@ section.hero_section {
 }
 
 // ABOUT:
+.main_about.desktop {
+  display: none;
+}
 .main {
   &_about {
     padding: 3.5rem 1rem 0;
@@ -191,5 +194,38 @@ section.curved_image_section {
   }
   .card_text {
     padding-bottom: 1rem;
+  }
+
+  //About Section
+
+  .main_about.mobile {
+    display: none;
+  }
+  .main_about.desktop {
+    display: inherit;
+    background-image: url("../../assets/img/about_us_bg_pc.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding: 0;
+    padding-bottom: 5%;
+  }
+  .main_about_left {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 5% 0;
+    width: 100%;
+
+    .main_about_left_content {
+      padding: 5% 5%;
+      width: 50%;
+    }
+    .main_text {
+      text-align: unset;
+    }
+    .main_btn_wrapper {
+      padding: 1rem 0;
+      max-width: 50%;
+    }
   }
 }

@@ -54,7 +54,7 @@ const Home = () => {
         {/* HERO SECTION END */}
 
         {/* About Section Begins */}
-        <section className={styles.main_about}>
+        <section className={[styles.main_about, styles.mobile].join(" ")}>
           <h2 className={styles.main_head}>About us</h2>
           <p className={styles.main_text}>
             Vital is a fully decentralized application allowing anyone to create
@@ -74,6 +74,34 @@ const Home = () => {
             <GradientBtn text="How does this work?" />
           </div>
         </section>
+
+        <section className={[styles.main_about, styles.desktop].join(" ")}>
+          <div className={styles.main_about_left}>
+            <div className={styles.main_about_left_content}>
+              <h2 className={styles.main_head}>About us</h2>
+              <p className={styles.main_text}>
+                Vital is a fully decentralized application allowing anyone to
+                create a fundraising project for all types of needs:{" "}
+                <strong>Wedding, birthday, retirement, medical</strong> support
+                or simply for <strong>common expenses.</strong>
+              </p>
+              <p className={styles.main_text}>
+                Built on the Elrond blockchain, Vital is fully governed by Smart
+                Contracts that provide transparency and security for our
+                users.Our business model allows us to let you spend your kitty
+                for free by spending it with one of our partners or by
+                participating in our staking program.
+              </p>
+
+              <div className={styles.main_btn_wrapper}>
+                <GradientBtn text="How does this work?" />
+              </div>
+            </div>
+          </div>
+        </section>
+        {/* About Section Ends */}
+
+        {/* Popular Projects Begin */}
         <section className={styles.main_carousel}>
           <h2 className={styles.carousel_head}>Popular Projects</h2>
           <Carousel />
@@ -100,7 +128,7 @@ const Home = () => {
             </div>
           </div>
         </section>
-        {/* About Section Ends */}
+        {/* Popular Projects End */}
 
         {/* How Section Begins*/}
         <section className={[styles.how_section, styles.mobile].join(" ")}>

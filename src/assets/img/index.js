@@ -7,6 +7,8 @@ import how_2_mobile from "./how_2_mobile.svg";
 import how_3_mobile from "./how_3_mobile.svg";
 import step1_notebook from "./step1_notebook.svg";
 
+import about_us_bg_pc from "./about_us_bg_pc.svg";
+
 export {
   logo,
   hero_text,
@@ -16,4 +18,5 @@ export {
   how_2_mobile,
   how_3_mobile,
   step1_notebook,
+  about_us_bg_pc,
 };

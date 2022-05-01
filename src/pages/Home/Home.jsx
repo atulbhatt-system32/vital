@@ -7,6 +7,7 @@ import {
 } from "../../assets/img";
 import { BasicCard, GradientBtn } from "../../components";
 import Carousel from "../../components/Carousel/Carousel";
+import AdvanceCard from "../../components/Card/AdvanceCard/AdvanceCard";
 import styles from "./Home.module.scss";
 
 const Home = () => {
@@ -163,16 +164,21 @@ const Home = () => {
 
         {/* Curved Image Section */}
 
-        <section className={styles.curved_image_section}>
+        {/* <section className={styles.curved_image_section}>
           <div className={styles.curved_image_card}>
             <img
               src="https://images.unsplash.com/photo-1473649085228-583485e6e4d7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1332&q=80"
               alt="kids school"
             />
           </div>
-        </section>
+        </section> */}
 
         {/* Curved Image SEction Ends */}
+
+        <section className={styles.main_advance_cards}>
+          <AdvanceCard />
+          <AdvanceCard />
+        </section>
       </main>
     </div>
   );

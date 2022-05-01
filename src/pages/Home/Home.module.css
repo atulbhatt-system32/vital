@@ -79,8 +79,6 @@ section.hero_section {
 }
 
 section.how_section {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
@@ -89,114 +87,69 @@ section.how_section {
 }
 
 .how_section.mobile .how_section_content {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-direction: column;
+  justify-content: center;
   text-align: center;
   width: 100%;
 }
-
 .how_section.mobile .how_steps_wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   padding: 2rem;
 }
-
 .how_section.mobile .how_step_bg {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
-
 .how_section.mobile .how_step1,
 .how_section.mobile .how_step2,
 .how_section.mobile .how_step3,
 .how_section.mobile .how_step4 {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   position: relative;
   width: 100%;
 }
-
 .how_section.mobile .step_content {
   position: absolute;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   max-width: 10rem;
   top: 15%;
 }
-
 .how_section.mobile .how_step1 {
   position: relative;
   z-index: 10;
 }
-
 .how_section.mobile .how_step2 {
   position: relative;
   top: -9.5%;
   z-index: 9;
 }
-
 .how_section.mobile .how_step3 {
   position: relative;
   top: -19%;
   z-index: 8;
 }
-
 .how_section.mobile .how_step4 {
   position: relative;
   top: -33%;
   z-index: 11;
 }
-
 .how_section.mobile .how_step4 .step_content {
   top: 12%;
 }
 
 section.curved_image_section {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
-
 section.curved_image_section .curved_image_card img {
   -o-object-fit: cover;
      object-fit: cover;

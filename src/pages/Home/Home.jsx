@@ -1,6 +1,6 @@
 import { hero_text } from "../../assets/img";
 import { BasicCard, GradientBtn } from "../../components";
-
+import Carousel from "../../components/Carousel/Carousel";
 import styles from "./Home.module.scss";
 
 const Home = () => {
@@ -66,9 +66,10 @@ const Home = () => {
             <GradientBtn text="How does this work?" />
           </div>
         </section>
-        <section className="main_card">
-          <h2 className="card_head">Popular Projects</h2>
-          {/* <Card /> */}
+        <section className="main_carousel">
+          <h2 className="main_carousel_head">Popular Projects</h2>
+          <Carousel />
+          {/* <div classNa></div> */}
         </section>
       </main>{" "}
     </div>

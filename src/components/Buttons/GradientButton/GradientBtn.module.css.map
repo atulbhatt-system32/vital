@@ -1,9 +1,1 @@
-{
-    "version": 3,
-    "mappings": "AAAA,AAAA,aAAa,CAAC;EACZ,UAAU,EAAE,mDAAmD;EAC/D,MAAM,EAAE,kDAAkD;EAC1D,OAAO,EAAE,IAAI;EACb,MAAM,EAAE,CAAC;EACT,KAAK,EAAE,KAAsB;EAC7B,OAAO,EAAE,IAAI;EACb,KAAK,EAAE,IAAI;EACX,aAAa,EAAE,MAAM;CACtB",
-    "sources": [
-        "GradientBtn.module.scss"
-    ],
-    "names": [],
-    "file": "GradientBtn.module.css"
-}
+{"version":3,"sources":["GradientBtn.module.scss","GradientBtn.module.css"],"names":[],"mappings":"AAAA;EACE,+DAAA;EACA,0DAAA;EACA,aAAA;EACA,SAAA;EACA,yBAAA;EACA,aAAA;EACA,WAAA;EACA,qBAAA;EAEA,oBAAA;EACA,eAAA;EACA,yBAAA;ACAF","file":"GradientBtn.module.css"}

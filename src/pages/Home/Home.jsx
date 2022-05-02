@@ -29,7 +29,7 @@ const Home = () => {
                   Create, share, participate securely in a transparent and
                   automated way
                 </span>
-                <GradientBtn text="Get Started" />
+                <GradientBtn text="Create" />
               </BasicCard>
             </div>
           </div>
@@ -111,24 +111,14 @@ const Home = () => {
           <Carousel />
           <div className={styles.wrap_link}>
             <div className={styles.carousel_link}>
-              <a href="*" className={styles.circle}>
-                .
-              </a>
+              <a href="*" className={styles.circle}></a>
               <a
                 href="*"
                 className={[styles.circle, styles.circle_active].join(" ")}
-              >
-                .
-              </a>
-              <a href="*" className={styles.circle}>
-                .
-              </a>
-              <a href="*" className={styles.circle}>
-                .
-              </a>
-              <a href="*" className={styles.circle}>
-                .
-              </a>
+              ></a>
+              <a href="*" className={styles.circle}></a>
+              <a href="*" className={styles.circle}></a>
+              <a href="*" className={styles.circle}></a>
             </div>
           </div>
         </section>
@@ -241,24 +231,14 @@ const Home = () => {
           <Ocassion />
           <div className={styles.wrap_link}>
             <div className={styles.carousel_link}>
-              <a href="*" className={styles.circle}>
-                .
-              </a>
+              <a href="*" className={styles.circle}></a>
               <a
                 href="*"
                 className={[styles.circle, styles.circle_active].join(" ")}
-              >
-                .
-              </a>
-              <a href="*" className={styles.circle}>
-                .
-              </a>
-              <a href="*" className={styles.circle}>
-                .
-              </a>
-              <a href="*" className={styles.circle}>
-                .
-              </a>
+              ></a>
+              <a href="*" className={styles.circle}></a>
+              <a href="*" className={styles.circle}></a>
+              <a href="*" className={styles.circle}></a>
             </div>
           </div>
         </section>

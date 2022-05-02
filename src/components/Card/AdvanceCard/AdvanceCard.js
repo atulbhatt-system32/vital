@@ -2,6 +2,12 @@ import React from "react";
 import GradientBtn from "../../Buttons/GradientButton/GradientBtn";
 import styles from "./AdvanceCard.module.scss";
 export default function AdvanceCard(props) {
+  let btn;
+  if (props.id === 1) {
+    btn = "party";
+  } else {
+    btn = "charity";
+  }
   return (
     <div className={styles.advance_card}>
       <img className={styles.advance_card_img} src={props.img} alt="play" />

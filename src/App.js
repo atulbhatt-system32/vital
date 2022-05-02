@@ -20,10 +20,10 @@ function App() {
             </div>
             <div className="nav_links">
               <div className="links_wrapper">
-                <a href="#">Home</a>
-                <a href="#">About Us</a>
-                <a href="#">Projects</a>
-                <a href="#">Contact</a>
+                <a href="*">Home</a>
+                <a href="*">About Us</a>
+                <a href="*">Projects</a>
+                <a href="*">Contact</a>
               </div>
               <div className="connect_wrapper">
                 <GradientBtn text="Connect" />

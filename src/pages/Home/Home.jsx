@@ -12,6 +12,7 @@ import styles from "./Home.module.scss";
 import Play from "../../assets/img/play.svg";
 import Charity from "../../assets/img/charity.svg";
 import Ocassion from "../../components/Ocassion/Ocassion.js";
+import Footer from "../../components/Footer/Footer.js";
 const Home = () => {
   return (
     <div className="home">
@@ -230,6 +231,7 @@ const Home = () => {
           </div>
         </section>
       </main>
+      <Footer />
     </div>
   );
 };

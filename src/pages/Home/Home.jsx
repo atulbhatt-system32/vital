@@ -180,6 +180,8 @@ const Home = () => {
 
         <section className={styles.main_advance_cards}>
           <AdvanceCard
+            id={1}
+            btn="party"
             title="Personal projects"
             img={Play}
             description_first="Create your kitty for all types of needs: 
@@ -191,6 +193,8 @@ const Home = () => {
             text="View all personal projects"
           />
           <AdvanceCard
+            id={2}
+            btn="charity"
             title="Charitable associations"
             img={Charity}
             description_first="Participate in the remarkable work of these 

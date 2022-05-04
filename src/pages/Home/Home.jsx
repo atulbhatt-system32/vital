@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-has-content */
 import {
   hero_text,
   how_1_mobile,
@@ -138,8 +139,12 @@ const Home = () => {
                 <div className={styles.how_step_bg}>
                   <img src={how_1_mobile} alt="step1" />
                   <div className={styles.step_content}>
-                    <img src={step1_notebook} alt="create" />
-                    <span>Create</span>
+                    <img
+                      src={step1_notebook}
+                      className={styles.step_illustration}
+                      alt="create"
+                    />
+                    <span className={styles.step_title}>Create</span>
                     <span>
                       Create & personalize your money pot in just a few clicks
                     </span>
@@ -150,8 +155,12 @@ const Home = () => {
                 <div className={styles.how_step_bg}>
                   <img src={how_2_mobile} alt="step2" />
                   <div className={styles.step_content}>
-                    <img src={step2_share} alt="share" />
-                    <span>Share</span>
+                    <img
+                      src={step2_share}
+                      className={styles.step_illustration}
+                      alt="share"
+                    />
+                    <span className={styles.step_title}>Share</span>
                     <span>
                       Easily share your money pot with friends via Email,
                       Twitter, Facebook or WhatsApp
@@ -163,8 +172,12 @@ const Home = () => {
                 <div className={styles.how_step_bg}>
                   <img src={how_3_mobile} alt="step3" />
                   <div className={styles.step_content}>
-                    <img src={step3_collect} alt="collect" />
-                    <span>Collect</span>
+                    <img
+                      src={step3_collect}
+                      className={styles.step_illustration}
+                      alt="collect"
+                    />
+                    <span className={styles.step_title}>Collect</span>
                     <span>
                       Collect & manage funds securely, watch your money pot grow
                       with each contribution!
@@ -175,9 +188,13 @@ const Home = () => {
               <div className={styles.how_step4}>
                 <div className={styles.how_step_bg}>
                   <div className={styles.step_content}>
-                    <img src={step4_give} alt="step4" />
-                    <span>Give</span>
-                    <span>
+                    <img
+                      src={step4_give}
+                      className={styles.step_illustration}
+                      alt="step4"
+                    />
+                    <span className={styles.step_title}>Give</span>
+                    <span className={styles.give_text}>
                       Spend your money pot with one of our e-commerce partners,
                       gift your money pot to the lucky recipient or request a
                       transaction to your own wallet.

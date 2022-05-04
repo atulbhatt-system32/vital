@@ -118,7 +118,18 @@ section.how_section {
     flex-direction: column;
     justify-content: center;
     text-align: center;
+    font-size: 0.7rem;
     width: 100%;
+  }
+
+  .step_title {
+    font-weight: 700;
+    font-size: 1rem;
+    padding: 0.4rem 0;
+  }
+  .step_illustration {
+    max-width: 40px;
+    max-height: 40px;
   }
   .how_section_heading {
     font-size: 22px;
@@ -157,7 +168,7 @@ section.how_section {
     align-items: center;
     width: 100%;
     max-width: 10rem;
-    top: 15%;
+    top: 12%;
   }
   .how_step1 {
     position: relative;
@@ -176,10 +187,14 @@ section.how_section {
   }
   .how_step4 {
     position: relative;
-    top: -33%;
+    top: -34%;
     z-index: 11;
     .step_content {
       top: 12%;
+    }
+
+    .give_text {
+      padding: 0 0.4rem;
     }
   }
 }

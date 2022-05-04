@@ -1,1 +1,9 @@
-{"version":3,"sources":["Ocassion_boxes.module.scss","Ocassion_boxes.module.css"],"names":[],"mappings":"AAAA;EAEI;IACE,gBAAA;IACA,eAAA;IACA,oBAAA;IACA,cAAA;ECAJ;EDEE;IACE,gBAAA;IACA,eAAA;IACA,oBAAA;IACA,cAAA;ECAJ;EDGI;IACE,gBAAA;IACA,eAAA;IACA,WAAA;IACA,oBAAA;IACA,WAAA;ECDN;AACF","file":"Ocassion_boxes.module.css"}
+{
+    "version": 3,
+    "mappings": "AAAA,MAAM,MAAM,MAAM,MAAM,SAAS,EAAE,KAAK;EAEnC,AAAD,kBAAM,CAAC;IACL,WAAW,EAAE,GAAG;IAChB,SAAS,EAAE,IAAI;IACf,WAAW,EAAE,OAAO;IACpB,KAAK,EAAE,OAAO;GACf;EACA,AAAD,yBAAa,CAAC;IACZ,WAAW,EAAE,GAAG;IAChB,SAAS,EAAE,IAAI;IACf,WAAW,EAAE,OAAO;IACpB,KAAK,EAAE,OAAO;GACf;EACA,AACC,iBADG,CACD,MAAM,CAAC;IACP,WAAW,EAAE,GAAG;IAChB,SAAS,EAAE,IAAI;IACf,KAAK,EAAE,IAAI;IACX,WAAW,EAAE,OAAO;IACpB,KAAK,EAAE,IAAI;GACZ",
+    "sources": [
+        "Ocassion_boxes.module.scss"
+    ],
+    "names": [],
+    "file": "Ocassion_boxes.module.css"
+}

@@ -7,6 +7,10 @@ import {
   step2_share,
   step3_collect,
   step4_give,
+  step_1_base,
+  step_2_base,
+  step_3_base,
+  step_4_base,
 } from "../../assets/img";
 import { BasicCard, GradientBtn } from "../../components";
 import Carousel from "../../components/Carousel/Carousel";
@@ -185,6 +189,48 @@ const Home = () => {
                   </div>
                 </div>
               </div>
+            </div>
+          </div>
+        </section>
+        {/* DESKTOP HOW SECTION */}
+        <section className={[styles.how_section, styles.desktop].join(" ")}>
+          <div className={styles.steps_wrap}>
+            <div>
+              <img src={step_1_base} alt="step_1_base" />
+              <div className={styles.step_1_content_wrap}>
+                <img src={step1_notebook} alt="notebook" />
+                <span>Create</span>
+                <p>Create & personalize your money pot in just a few clicks</p>
+              </div>
+            </div>
+            <div>
+              <img src={step_2_base} alt="step_2_base" />
+              <img src={step2_share} alt="share" />
+              <span>Share</span>
+
+              <p>
+                Easily share your money pot with friends via Email, Twitter,
+                Facebook or WhatsApp
+              </p>
+            </div>
+            <div>
+              <img src={step_3_base} alt="step_3_base" />
+              <img src={step3_collect} alt="collect" />
+              <span>Collect</span>
+              <p>
+                Collect & manage funds securely, watch your money pot grow with
+                each contribution!
+              </p>
+            </div>
+            <div>
+              <img src={step_4_base} alt="step_4_base" />
+              <img src={step4_give} alt="give" />
+              <span>Give</span>
+              <p>
+                Spend your money pot with one of our e-commerce partners, gift
+                your money pot to the lucky recipient or request a transaction
+                to your own wallet.
+              </p>
             </div>
           </div>
         </section>

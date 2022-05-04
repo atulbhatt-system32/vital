@@ -70,13 +70,13 @@
 @media only screen and (min-width: 768px) {
   .advance_card {
     padding: 0 3rem 0 3rem;
+    width: 50%;
   }
   .advance_card_img {
     display: none;
   }
   .advance_card_content_wrap {
     margin-top: 0;
-    padding-left: 55px;
     padding-bottom: 50px;
     -webkit-box-align: start;
         -ms-flex-align: start;

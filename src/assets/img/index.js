@@ -10,10 +10,7 @@ import step2_share from "./step2_share.svg";
 import step3_collect from "./step3_collect.svg";
 import step4_give from "./step4_give.svg";
 import about_us_bg_pc from "./about_us_bg_pc.svg";
-import step_1_base from "./step_1_base.svg";
-import step_2_base from "./step_2_base.svg";
-import step_3_base from "./step_3_base.svg";
-import step_4_base from "./step_4_base.svg";
+import party_charity from "./party_charity.png";
 
 export {
   logo,
@@ -28,8 +25,5 @@ export {
   step2_share,
   step3_collect,
   step4_give,
-  step_1_base,
-  step_2_base,
-  step_3_base,
-  step_4_base,
+  party_charity,
 };

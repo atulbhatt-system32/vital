@@ -2,8 +2,6 @@ import React from "react";
 import Cake from "../../assets/img/cake.svg";
 import styles from "./Carousel.module.scss";
 
-console.log(styles, "stlyes");
-
 export default function Carousel() {
   return (
     <div className={styles.carousel}>

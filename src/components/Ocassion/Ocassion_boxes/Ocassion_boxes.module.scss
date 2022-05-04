@@ -1,16 +1,19 @@
 @media only screen and (min-width: 768px) {
   .Ocassion_box {
+    padding: 1rem 0;
+    max-width: 10rem;
     &_head {
       font-weight: 700;
-      font-size: 26px;
+      font-size: 1rem;
       line-height: 30.52px;
       color: #2f455c;
+      margin-bottom: 0;
     }
     &_description {
       font-weight: 500;
-      font-size: 14px;
-      line-height: 16.44px;
+      font-size: 0.6rem;
       color: #2f455c;
+      margin-top: 0.5rem;
     }
     &_btn {
       & button {
@@ -19,7 +22,11 @@
         width: 14em;
         line-height: 14.09px;
         color: #fff;
+        padding: 0.5rem 0;
       }
     }
+  }
+  .Ocassion_box + .Ocassion_box {
+    margin-left: 5rem;
   }
 }

@@ -95,6 +95,12 @@ section.hero_section {
   &_btn {
     padding: 22px 0;
     width: 70%;
+    & button {
+      font-size: 18px;
+      line-height: 21.13px;
+      font-weight: 400;
+      color: #fff;
+    }
   }
 }
 

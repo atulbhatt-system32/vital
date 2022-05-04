@@ -97,6 +97,12 @@ section.hero_section {
   padding: 22px 0;
   width: 70%;
 }
+.main_btn button {
+  font-size: 18px;
+  line-height: 21.13px;
+  font-weight: 400;
+  color: #fff;
+}
 
 section.how_section {
   display: flex;

@@ -40,6 +40,12 @@
 .ocassion_mobile_btn {
   padding-top: 29px;
 }
+.ocassion_mobile_btn button {
+  font-size: 12px;
+  line-height: 14.09px;
+  font-weight: 400;
+  padding: 10px 15px;
+}
 
 @media only screen and (min-width: 768px) {
   .ocassion_mobile {

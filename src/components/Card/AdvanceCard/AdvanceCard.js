@@ -4,13 +4,13 @@ import styles from "./AdvanceCard.module.scss";
 export default function AdvanceCard(props) {
   let chosen;
   if (props.id === 1) {
-    chosen = "party";
+    chosen = "View all personal projects";
   } else {
-    chosen = "charity";
+    chosen = "See all charities";
   }
   return (
     <>
-      <div alt={chosen} className={styles.advance_card}>
+      <div className={styles.advance_card}>
         <img className={styles.advance_card_img} src={props.img} alt={chosen} />
         <div className={styles.advance_card_content_wrap}>
           <h2 className={styles.advance_card_title}>{props.title}</h2>
@@ -23,8 +23,8 @@ export default function AdvanceCard(props) {
             {props.description_second}
           </p>
 
-          <div className={styles.advance_card_btn}>
-            <GradientBtn text={props.text} />
+          <div btns={chosen} className={styles.advance_card_btn}>
+            <GradientBtn text={chosen} />
           </div>
         </div>
       </div>

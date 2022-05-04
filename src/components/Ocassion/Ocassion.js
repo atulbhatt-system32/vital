@@ -9,21 +9,21 @@ export default function Ocassion() {
   return (
     <div>
       <div className={styles.ocassion_mobile}>
-        <div className={styles.ocassion_img_wrap}>
+        <div className={styles.ocassion_mobile_img_wrap}>
           <img src={Gift} alt="gift" />
         </div>
-        <div className={styles.ocassion_content_wrap}>
-          <span className={styles.ocassion_title}>Birthday</span>
-          <p className={styles.ocassion_description_first}>
+        <div className={styles.ocassion_mobile_content_wrap}>
+          <span className={styles.ocassion_mobile_title}>Birthday</span>
+          <p className={styles.ocassion_mobile_description_first}>
             Create your kitty for all types of needs: Wedding, birthday,
             retirement, medical support or simply for common expenses.
           </p>
-          <p className={styles.ocassion_description_second}>
+          <p className={styles.ocassion_mobile_description_second}>
             And invite your friends, family or entourage to participate in the
             simplest way
           </p>
         </div>
-        <div className={styles.ocassion_btn}>
+        <div className={styles.ocassion_mobile_btn}>
           <GradientBtn text="See all personal projects" />
         </div>
       </div>

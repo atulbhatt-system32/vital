@@ -410,15 +410,27 @@ section.curved_image_section .curved_image_card img {
     left: 12%;
   }
   .main_advance_cards {
-    background-image: url("../../assets/img/party_charity.svg");
+    background-image: url("../../assets/img/party_charity.png");
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-rows: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-    -ms-grid-columns: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .main_advance_cards .advance_card_container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+  }
+  .main_advance_cards .advance_card_container.right {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
   }
   .gradient_btn_wrapper {
     -ms-flex-item-align: start;

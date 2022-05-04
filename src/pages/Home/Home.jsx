@@ -212,42 +212,57 @@ const Home = () => {
         {/* DESKTOP HOW SECTION */}
         <section className={[styles.how_section, styles.desktop].join(" ")}>
           <div className={styles.steps_wrap}>
-            <div>
+            <div className={styles.step_1}>
               <img src={step_1_base} alt="step_1_base" />
               <div className={styles.step_1_content_wrap}>
-                <img src={step1_notebook} alt="notebook" />
-                <span>Create</span>
-                <p>Create & personalize your money pot in just a few clicks</p>
+                <div>
+                  <img src={step1_notebook} alt="notebook" />
+                </div>
+                <span className={styles.step_head}>Create</span>
+                <p para="p-one" className={styles.step_info}>
+                  Create & personalize your money pot in just a few clicks
+                </p>
               </div>
             </div>
-            <div>
+            <div className={styles.step_2}>
               <img src={step_2_base} alt="step_2_base" />
-              <img src={step2_share} alt="share" />
-              <span>Share</span>
-
-              <p>
-                Easily share your money pot with friends via Email, Twitter,
-                Facebook or WhatsApp
-              </p>
+              <div className={styles.step_2_content_wrap}>
+                <div>
+                  <img src={step2_share} alt="share" />
+                </div>
+                <span className={styles.step_head}>Share</span>
+                <p para="p-two" className={styles.step_info}>
+                  Easily share your money pot with friends via Email, Twitter,
+                  Facebook or WhatsApp
+                </p>
+              </div>
             </div>
-            <div>
+            <div className={styles.step_3}>
               <img src={step_3_base} alt="step_3_base" />
-              <img src={step3_collect} alt="collect" />
-              <span>Collect</span>
-              <p>
-                Collect & manage funds securely, watch your money pot grow with
-                each contribution!
-              </p>
+              <div className={styles.step_3_content_wrap}>
+                <div>
+                  <img src={step3_collect} alt="collect" />
+                </div>
+                <span className={styles.step_head}>Collect</span>
+                <p para="p-three" className={styles.step_info}>
+                  Collect & manage funds securely, watch your money pot grow
+                  with each contribution!
+                </p>
+              </div>
             </div>
-            <div>
+            <div className={styles.step_4}>
               <img src={step_4_base} alt="step_4_base" />
-              <img src={step4_give} alt="give" />
-              <span>Give</span>
-              <p>
-                Spend your money pot with one of our e-commerce partners, gift
-                your money pot to the lucky recipient or request a transaction
-                to your own wallet.
-              </p>
+              <div className={styles.step_4_content_wrap}>
+                <div>
+                  <img src={step4_give} alt="give" />
+                </div>
+                <span className={styles.step_head}>Give</span>
+                <p para="p-four" className={styles.step_info}>
+                  Spend your money pot with one of our e-commerce partners, gift
+                  your money pot to the lucky recipient or request a transaction
+                  to your own wallet.
+                </p>
+              </div>
             </div>
           </div>
         </section>

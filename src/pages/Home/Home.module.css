@@ -120,7 +120,17 @@ section.how_section {
   flex-direction: column;
   justify-content: center;
   text-align: center;
+  font-size: 0.7rem;
   width: 100%;
+}
+.how_section.mobile .step_title {
+  font-weight: 700;
+  font-size: 1rem;
+  padding: 0.4rem 0;
+}
+.how_section.mobile .step_illustration {
+  max-width: 40px;
+  max-height: 40px;
 }
 .how_section.mobile .how_section_heading {
   font-size: 22px;
@@ -157,7 +167,7 @@ section.how_section {
   align-items: center;
   width: 100%;
   max-width: 10rem;
-  top: 15%;
+  top: 12%;
 }
 .how_section.mobile .how_step1 {
   position: relative;
@@ -175,11 +185,14 @@ section.how_section {
 }
 .how_section.mobile .how_step4 {
   position: relative;
-  top: -33%;
+  top: -34%;
   z-index: 11;
 }
 .how_section.mobile .how_step4 .step_content {
   top: 12%;
+}
+.how_section.mobile .how_step4 .give_text {
+  padding: 0 0.4rem;
 }
 
 section.curved_image_section {
@@ -207,14 +220,139 @@ section.curved_image_section .curved_image_card img {
 
   .steps_wrap {
     display: flex;
+    width: 100%;
   }
 
   .how_section.desktop {
     display: flex;
   }
 
+  .step_1 {
+    position: relative;
+    z-index: -4;
+    transform: translateX(144px);
+  }
+
+  .step_2 {
+    position: relative;
+    z-index: -3;
+    transform: translateX(48px);
+  }
+
+  .step_3 {
+    position: relative;
+    z-index: -2;
+    transform: translateX(-48px);
+  }
+
+  .step_4 {
+    position: relative;
+    z-index: -1;
+    transform: translateX(-144px);
+  }
+
   .step_1_content_wrap {
     position: absolute;
+    top: 12px;
+    left: -12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2rem;
+  }
+
+  .step_2_content_wrap {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2rem;
+  }
+
+  .step_3_content_wrap {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2rem;
+  }
+
+  .step_4_content_wrap {
+    position: absolute;
+    top: 0;
+    left: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2rem;
+  }
+
+  .step_head {
+    color: #2f455c;
+    line-height: 20px;
+    font-size: 20px;
+    font-weight: 400;
+    padding-top: 5px;
+  }
+
+  .step_info {
+    color: #2f455c;
+    line-height: 15px;
+    font-size: 10px;
+    font-weight: 500;
+    text-align: center;
+  }
+
+  [para=p-one] {
+    padding: 0 100px;
+  }
+
+  [para=p-two] {
+    padding: 0 105px;
+  }
+
+  [para=p-three] {
+    padding: 0 102px;
+  }
+
+  [para=p-four] {
+    padding: 0 55px;
+  }
+
+  [alt=notebook] {
+    height: 100%;
+    width: 100%;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+
+  [alt=share] {
+    height: 65%;
+    width: 65%;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+
+  [alt=collect] {
+    height: 61%;
+    width: 61%;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+
+  [alt=give] {
+    height: 70%;
+    width: 70%;
+    -o-object-fit: contain;
+       object-fit: contain;
   }
 
   .hero_section.desktop {

@@ -211,6 +211,8 @@ const Home = () => {
         </section>
         {/* DESKTOP HOW SECTION */}
         <section className={[styles.how_section, styles.desktop].join(" ")}>
+          <span className={styles.hero_section_head}>How does this work ?</span>
+
           <div className={styles.steps_wrap}>
             <div className={styles.step_1}>
               <img src={step_1_base} alt="step_1_base" />

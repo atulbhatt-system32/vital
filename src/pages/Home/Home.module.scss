@@ -219,7 +219,7 @@ section.curved_image_section {
   //   display: flex;
   // }
   [alt$="base"] {
-    width: 100%;
+    width: 110%;
     height: 100%;
     object-fit: contain;
   }
@@ -231,67 +231,82 @@ section.curved_image_section {
 
   .how_section.desktop {
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hero_section_head {
+    font-size: 35px;
+    font-weight: 700;
+    color: #2f455c;
+    line-height: 40.7px;
+    padding: 3rem 0;
   }
   .step_1 {
     position: relative;
     z-index: -4;
-    transform: translateX(144px);
+    right: -5%;
   }
   .step_2 {
     position: relative;
     z-index: -3;
-    transform: translateX(48px);
+    right: 0;
   }
   .step_3 {
     position: relative;
     z-index: -2;
-    transform: translateX(-48px);
+    right: 5%;
   }
   .step_4 {
     position: relative;
     z-index: -1;
-    transform: translateX(-144px);
+    right: 10%;
   }
 
   .step_1_content_wrap {
     position: absolute;
     top: 12px;
-    left: -12px;
+    right: 25%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding-top: 2rem;
+    max-width: 45%;
   }
   .step_2_content_wrap {
     position: absolute;
     top: 0;
-    left: 0;
+    right: 20%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding-top: 2rem;
+    max-width: 45%;
   }
   .step_3_content_wrap {
     position: absolute;
     top: 0;
-    left: 0;
+    right: 20%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding-top: 2rem;
+    max-width: 45%;
   }
   .step_4_content_wrap {
     position: absolute;
     top: 0;
-    left: 60px;
+    right: 7%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding-top: 2rem;
+    max-width: 54%;
   }
   .step_head {
     color: #2f455c;
@@ -307,38 +322,26 @@ section.curved_image_section {
     font-weight: 500;
     text-align: center;
   }
-  [para="p-one"] {
-    padding: 0 100px;
-  }
-  [para="p-two"] {
-    padding: 0 105px;
-  }
-  [para="p-three"] {
-    padding: 0 102px;
-  }
-  [para="p-four"] {
-    padding: 0 55px;
-  }
   [alt="notebook"] {
     height: 100%;
     width: 100%;
     object-fit: contain;
   }
   [alt="share"] {
-    height: 65%;
-    width: 65%;
+    height: 60%;
+    width: 60%;
     object-fit: contain;
   }
 
   [alt="collect"] {
-    height: 61%;
-    width: 61%;
+    height: 60%;
+    width: 60%;
     object-fit: contain;
   }
 
   [alt="give"] {
-    height: 70%;
-    width: 70%;
+    height: 60%;
+    width: 60%;
     object-fit: contain;
   }
 

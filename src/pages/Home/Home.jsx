@@ -116,7 +116,12 @@ const Home = () => {
         {/* Popular Projects Begin */}
         <section className={styles.main_carousel}>
           <h2 className={styles.carousel_head}>Popular Projects</h2>
-          <Carousel />
+          <div className={styles.carousel_cards}>
+            <Carousel title="Birthday" />
+            <Carousel title="Gifts" />
+            <Carousel title="Travel" />
+          </div>
+
           <div className={styles.wrap_link}>
             <div className={styles.carousel_link}>
               <a href="*" className={styles.circle}></a>

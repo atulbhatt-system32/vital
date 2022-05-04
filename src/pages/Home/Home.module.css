@@ -211,6 +211,21 @@ section.curved_image_section .curved_image_card img {
     display: none;
   }
 
+  .main_carousel {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .main_carousel_head {
+    color: #2f455c;
+  }
+  .main_carousel_cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
   [alt$=base] {
     width: 110%;
     height: 100%;

@@ -214,6 +214,24 @@ section.curved_image_section {
   .hero_section.mobile {
     display: none;
   }
+
+  // Ocassion:
+  .main_carousel {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    &_head {
+      color: #2f455c;
+    }
+    &_cards {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  // ******************************************
   // ******************************************
   // section.how_section {
   //   display: flex;

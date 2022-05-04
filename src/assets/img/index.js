@@ -6,7 +6,9 @@ import how_1_mobile from "./how_1_mobile.svg";
 import how_2_mobile from "./how_2_mobile.svg";
 import how_3_mobile from "./how_3_mobile.svg";
 import step1_notebook from "./step1_notebook.svg";
-
+import step2_share from "./step2_share.svg";
+import step3_collect from "./step3_collect.svg";
+import step4_give from "./step4_give.svg";
 import about_us_bg_pc from "./about_us_bg_pc.svg";
 
 export {
@@ -19,4 +21,7 @@ export {
   how_3_mobile,
   step1_notebook,
   about_us_bg_pc,
+  step2_share,
+  step3_collect,
+  step4_give,
 };

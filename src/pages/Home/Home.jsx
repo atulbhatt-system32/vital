@@ -4,6 +4,9 @@ import {
   how_2_mobile,
   how_3_mobile,
   step1_notebook,
+  step2_share,
+  step3_collect,
+  step4_give,
 } from "../../assets/img";
 import { BasicCard, GradientBtn } from "../../components";
 import Carousel from "../../components/Carousel/Carousel";
@@ -135,7 +138,7 @@ const Home = () => {
                 <div className={styles.how_step_bg}>
                   <img src={how_1_mobile} alt="step1" />
                   <div className={styles.step_content}>
-                    <img src={step1_notebook} alt="step1" />
+                    <img src={step1_notebook} alt="create" />
                     <span>Create</span>
                     <span>
                       Create & personalize your money pot in just a few clicks
@@ -147,10 +150,11 @@ const Home = () => {
                 <div className={styles.how_step_bg}>
                   <img src={how_2_mobile} alt="step2" />
                   <div className={styles.step_content}>
-                    <img src={step1_notebook} alt="step2" />
-                    <span>Create</span>
+                    <img src={step2_share} alt="share" />
+                    <span>Share</span>
                     <span>
-                      Create & personalize your money pot in just a few clicks
+                      Easily share your money pot with friends via Email,
+                      Twitter, Facebook or WhatsApp
                     </span>
                   </div>
                 </div>
@@ -159,10 +163,11 @@ const Home = () => {
                 <div className={styles.how_step_bg}>
                   <img src={how_3_mobile} alt="step3" />
                   <div className={styles.step_content}>
-                    <img src={step1_notebook} alt="step3" />
-                    <span>Create</span>
+                    <img src={step3_collect} alt="collect" />
+                    <span>Collect</span>
                     <span>
-                      Create & personalize your money pot in just a few clicks
+                      Collect & manage funds securely, watch your money pot grow
+                      with each contribution!
                     </span>
                   </div>
                 </div>
@@ -170,10 +175,12 @@ const Home = () => {
               <div className={styles.how_step4}>
                 <div className={styles.how_step_bg}>
                   <div className={styles.step_content}>
-                    <img src={step1_notebook} alt="step3" />
-                    <span>Create</span>
+                    <img src={step4_give} alt="step4" />
+                    <span>Give</span>
                     <span>
-                      Create & personalize your money pot in just a few clicks
+                      Spend your money pot with one of our e-commerce partners,
+                      gift your money pot to the lucky recipient or request a
+                      transaction to your own wallet.
                     </span>
                   </div>
                 </div>

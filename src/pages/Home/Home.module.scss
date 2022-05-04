@@ -208,6 +208,85 @@ section.curved_image_section {
     padding-bottom: 50%;
     width: 100%;
   }
+
+  // HOW SECTION:
+  [alt="step1"] {
+    transform: rotate(270deg);
+  }
+  [alt="step2"] {
+    transform: rotate(270deg);
+  }
+  [alt="step3"] {
+    transform: rotate(270deg);
+  }
+
+  section.how_section {
+    display: flex;
+  }
+  .how_section.mobile {
+    display: flex;
+    margin-bottom: 0;
+    .how_section_content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      width: 100%;
+    }
+    .how_steps_wrapper {
+      flex-direction: row;
+    }
+    .how_step_bg {
+      display: flex;
+      justify-content: center;
+    }
+    .how_step1,
+    .how_step2,
+    .how_step3,
+    .how_step4 {
+      display: flex;
+      justify-content: center;
+      position: relative;
+      width: 100%;
+    }
+    .step_content {
+      position: absolute;
+      width: 100%;
+      max-width: 10rem;
+      top: 30%;
+      left: 5%;
+    }
+    .how_step1 {
+      position: relative;
+      z-index: 10;
+      left: 5%;
+    }
+
+    .how_step2 {
+      position: relative;
+      top: 0;
+      z-index: 9;
+    }
+    .how_step3 {
+      position: relative;
+      top: 0;
+      z-index: 8;
+      .step_content {
+        left: -12%;
+      }
+    }
+    .how_step4 {
+      position: relative;
+      top: -15%;
+      left: -11%;
+      z-index: 11;
+      .step_content {
+        left: 12%;
+      }
+    }
+  }
+
+  // ***********************
   // GRID:
   .main_advance_cards {
     background-image: url("../../assets/img/party_charity.svg");
@@ -246,7 +325,7 @@ section.curved_image_section {
     background-size: contain;
     background-repeat: no-repeat;
     padding: 0;
-    padding-bottom: 5%;
+    padding-bottom: 15%;
   }
   .main_about_left {
     display: flex;

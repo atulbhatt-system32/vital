@@ -210,6 +210,9 @@ const Home = () => {
             simplest way"
             text="View all personal projects"
           />
+          <div className={styles.grid_box_one}></div>
+          <div className={styles.grid_box_two}></div>
+
           <AdvanceCard
             id={2}
             btn="charity"

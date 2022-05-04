@@ -9,27 +9,32 @@ import GradientBtn from "../Buttons/GradientButton/GradientBtn";
 export default function Footer() {
   return (
     <footer className={styles.footer}>
-      <div className={styles.footer_content_wrap}>
-        <div className={styles.footer_logo}>
-          <img
-            className={styles.footer_logo_img}
-            src={vitalLogo}
-            alt="footer-logo"
-          />
-          <span className={styles.footer_logo_text}>vital</span>
+      <div className={styles.footer_desktop_wrap}>
+        <div className={styles.footer_content_wrap}>
+          <div className={styles.footer_logo}>
+            <img
+              className={styles.footer_logo_img}
+              src={vitalLogo}
+              alt="footer-logo"
+            />
+            <span className={styles.footer_logo_text}>vital</span>
+          </div>
+          <span className={styles.footer_head}>Earn</span>
+          <p className={styles.footer_description_one}>
+            Stake you VITAL to earn more VITAL
+          </p>
+          <p className={styles.footer_description_two}>
+            Stake your NFTs to earn VITAL
+          </p>
+          <div className={styles.footer_btn_wrap}>
+            <GradientBtn text="Connect" />
+          </div>
         </div>
-        <span className={styles.footer_head}>Earn</span>
-        <p className={styles.footer_description_one}>
-          Stake you VITAL to earn more VITAL
-        </p>
-        <p className={styles.footer_description_two}>
-          Stake your NFTs to earn VITAL
-        </p>
-        <div className={styles.footer_btn_wrap}>
-          <GradientBtn text="Connect" />
+        <div className={styles.footer_img}>
+          <img src={Footer_img} alt="footer-img" />
         </div>
       </div>
-      <img src={Footer_img} alt="footer-img" />
+
       <div>
         <div className={styles.footer_bottom_wrap}>
           <div className={styles.footer_social}>

@@ -58,3 +58,48 @@
     font-style: normal;
   }
 }
+
+@media only screen and (min-width: 768px) {
+  .advance_card {
+    padding: 0 3rem 0 3rem;
+    &_img {
+      display: none;
+    }
+    &_content_wrap {
+      margin-top: 0;
+      padding-left: 55px;
+      padding-bottom: 50px;
+      align-items: flex-start;
+    }
+    &_title {
+      margin: 0;
+      font-size: 35px;
+      line-height: 43.7px;
+      padding-bottom: 20px;
+      padding-top: 20px;
+    }
+    &_description_first {
+      text-align: left;
+      margin-top: 0;
+      margin-bottom: 0;
+      font-size: 21px;
+      line-height: 31px;
+    }
+    &_description_second {
+      margin-top: 0;
+      text-align: left;
+      margin-bottom: 0;
+      padding: 0;
+      font-size: 21px;
+      line-height: 31px;
+    }
+    &_btn {
+      font-size: 15px;
+      padding-bottom: 0;
+      & button {
+        width: 15em;
+        font-size: 1em;
+      }
+    }
+  }
+}

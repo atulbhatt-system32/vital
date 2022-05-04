@@ -1,0 +1,21 @@
+@media only screen and (min-width: 768px) {
+  .Ocassion_box_head {
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 30.52px;
+    color: #2f455c;
+  }
+  .Ocassion_box_description {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16.44px;
+    color: #2f455c;
+  }
+  .Ocassion_box_btn button {
+    font-weight: 400;
+    font-size: 12px;
+    width: 14em;
+    line-height: 14.09px;
+    color: #fff;
+  }
+}/*# sourceMappingURL=Ocassion_boxes.module.css.map */

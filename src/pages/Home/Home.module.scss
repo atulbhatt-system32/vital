@@ -202,7 +202,16 @@ section.curved_image_section {
     padding-bottom: 50%;
     width: 100%;
   }
-
+  // GRID:
+  .main_advance_cards {
+    background-image: url("../../assets/img/party_charity.svg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+  }
+  // .madvance_card.desktop
   .gradient_btn_wrapper {
     align-self: flex-start;
     width: 100%;

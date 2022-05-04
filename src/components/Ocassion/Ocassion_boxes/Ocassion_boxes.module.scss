@@ -1,0 +1,25 @@
+@media only screen and (min-width: 768px) {
+  .Ocassion_box {
+    &_head {
+      font-weight: 700;
+      font-size: 26px;
+      line-height: 30.52px;
+      color: #2f455c;
+    }
+    &_description {
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 16.44px;
+      color: #2f455c;
+    }
+    &_btn {
+      & button {
+        font-weight: 400;
+        font-size: 12px;
+        width: 14em;
+        line-height: 14.09px;
+        color: #fff;
+      }
+    }
+  }
+}

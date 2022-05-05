@@ -36,6 +36,12 @@ section.hero_section {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  .desktop {
+    display: none;
+  }
+  .mobile {
+    display: block;
+  }
 }
 .carousel_cards {
   display: flex;
@@ -229,7 +235,7 @@ section.curved_image_section {
   }
   // Ocassion:
   .main_ocassion {
-    margin: 0 50px;
+    padding: 0 100px;
   }
 
   .main_carousel {
@@ -248,6 +254,9 @@ section.curved_image_section {
     }
   }
 
+  .carousel.mobile {
+    display: none;
+  }
   .carousel_cards.desktop {
     display: inherit;
   }
@@ -458,6 +467,11 @@ section.curved_image_section {
     color: #2f455c;
     font-size: 3rem;
     font-weight: 900;
+    .carousel_slider {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+    }
   }
   .main_about_left {
     display: flex;
@@ -480,10 +494,34 @@ section.curved_image_section {
     }
   }
 }
+@media only screen and (min-width: 768px) {
+  .main_carousel {
+    .mobile {
+      display: none;
+    }
+    .desktop {
+      display: inherit;
+      width: 100%;
+      display: flex;
+      max-height: 30rem;
+      .carousel_slide {
+        width: 100%;
+      }
+      .multi_cards_holder {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+      }
+    }
+  }
+}
 
 @media only screen and (min-width: 1408px) {
   .main_carousel {
     margin-top: -5%;
+    .desktop {
+      display: inherit;
+    }
   }
   .step_info {
     font-size: 14px;

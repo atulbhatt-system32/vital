@@ -36,6 +36,12 @@ section.hero_section {
   justify-content: center;
   align-items: center;
 }
+.main_carousel .desktop {
+  display: none;
+}
+.main_carousel .mobile {
+  display: block;
+}
 
 .carousel_cards {
   display: flex;
@@ -226,7 +232,7 @@ section.curved_image_section .curved_image_card img {
   }
 
   .main_ocassion {
-    margin: 0 50px;
+    padding: 0 100px;
   }
 
   .main_carousel {
@@ -243,6 +249,10 @@ section.curved_image_section .curved_image_card img {
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+
+  .carousel.mobile {
+    display: none;
   }
 
   .carousel_cards.desktop {
@@ -470,6 +480,11 @@ section.curved_image_section .curved_image_card img {
     font-size: 3rem;
     font-weight: 900;
   }
+  .main_carousel h2 .carousel_slider {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
 
   .main_about_left {
     display: flex;
@@ -491,9 +506,31 @@ section.curved_image_section .curved_image_card img {
     max-width: 50%;
   }
 }
+@media only screen and (min-width: 768px) {
+  .main_carousel .mobile {
+    display: none;
+  }
+  .main_carousel .desktop {
+    display: inherit;
+    width: 100%;
+    display: flex;
+    max-height: 30rem;
+  }
+  .main_carousel .desktop .carousel_slide {
+    width: 100%;
+  }
+  .main_carousel .desktop .multi_cards_holder {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
+}
 @media only screen and (min-width: 1408px) {
   .main_carousel {
     margin-top: -5%;
+  }
+  .main_carousel .desktop {
+    display: inherit;
   }
 
   .step_info {

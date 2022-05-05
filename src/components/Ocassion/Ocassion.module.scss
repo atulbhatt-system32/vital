@@ -63,11 +63,13 @@
       align-items: flex-end;
       width: 100%;
       padding: 0 1rem;
+      margin-bottom: -5px;
     }
     &_bottom {
       display: flex;
       width: 100%;
       padding: 0 1rem;
+      margin-top: -42px;
     }
     &_center {
       & img {

@@ -1,5 +1,5 @@
 /* eslint-disable jsx-a11y/anchor-has-content */
-import { CarouselProvider, Slider, Slide } from "pure-react-carousel";
+import { CarouselProvider, Slider, Slide, Dot } from "pure-react-carousel";
 import "pure-react-carousel/dist/react-carousel.es.css";
 import {
   hero_text,
@@ -152,6 +152,10 @@ const Home = () => {
                 </div>
               </Slide>
             </Slider>
+            <div className={styles.carousel_controls}>
+              <Dot slide={0} className={styles.circle} />
+              <Dot slide={1} className={styles.circle} />
+            </div>
           </CarouselProvider>
 
           {/* Carousel Cards for mobile */}
@@ -176,19 +180,6 @@ const Home = () => {
               </Slide>
             </Slider>
           </CarouselProvider>
-
-          {/* <div className={styles.wrap_link}>
-            <div className={styles.carousel_link}>
-              <a href="*" className={styles.circle}></a>
-              <a
-                href="*"
-                className={[styles.circle, styles.circle_active].join(" ")}
-              ></a>
-              <a href="*" className={styles.circle}></a>
-              <a href="*" className={styles.circle}></a>
-              <a href="*" className={styles.circle}></a>
-            </div>
-          </div> */}
         </section>
         {/* Popular Projects End */}
 

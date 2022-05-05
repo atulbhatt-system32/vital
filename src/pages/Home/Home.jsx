@@ -1,5 +1,11 @@
 /* eslint-disable jsx-a11y/anchor-has-content */
-import { CarouselProvider, Slider, Slide, Dot } from "pure-react-carousel";
+import {
+  CarouselProvider,
+  Slider,
+  Slide,
+  Dot,
+  DotGroup,
+} from "pure-react-carousel";
 import "pure-react-carousel/dist/react-carousel.es.css";
 import {
   hero_text,
@@ -130,7 +136,7 @@ const Home = () => {
             orientation="horizontal"
           >
             <Slider className={styles.carousel_slide}>
-              <Slide index={0} style={{ display: "flex" }}>
+              <Slide index={0}>
                 <div className={styles.multi_cards_holder}>
                   <Carousel title="Birthday" />
                   <Carousel title="Gifts" />
@@ -153,8 +159,7 @@ const Home = () => {
               </Slide>
             </Slider>
             <div className={styles.carousel_controls}>
-              <Dot slide={0} className={styles.circle} />
-              <Dot slide={1} className={styles.circle} />
+              <DotGroup showAsSelectedForCurrentSlideOnly />
             </div>
           </CarouselProvider>
 
@@ -179,6 +184,9 @@ const Home = () => {
                 <Carousel title="Travel" />
               </Slide>
             </Slider>
+            <div className={styles.carousel_controls}>
+              <DotGroup showAsSelectedForCurrentSlideOnly />
+            </div>
           </CarouselProvider>
         </section>
         {/* Popular Projects End */}

@@ -71,10 +71,25 @@ button {
   font-size: 1.6rem;
   font-weight: normal;
   color: var(--primary-text-color);
-  /* padding added */
   padding-left: 8px;
 }
 
+.carousel__dot {
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  border: 1px solid #102f35;
+  background-color: #fff;
+}
+.carousel__dot + .carousel__dot {
+  margin-left: 1rem;
+  border: 1px solid rgba(16, 47, 53, 1);
+}
+
+.carousel__dot--selected {
+  background-color: #102f35;
+  border: 1px solid #102f35;
+}
 @media only screen and (min-width: 768px) {
   .nav_mobile {
     display: none;

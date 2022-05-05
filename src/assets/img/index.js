@@ -15,6 +15,10 @@ import step_2_base from "./step_2_base.svg";
 import step_3_base from "./step_3_base.svg";
 import step_4_base from "./step_4_base.svg";
 import party_charity from "./party_charity.png";
+import heart from "./heart.svg";
+import person from "./person.svg";
+import money from "./money.svg";
+import cake from "./cake.svg";
 
 export {
   logo,
@@ -34,4 +38,8 @@ export {
   step_3_base,
   step_4_base,
   party_charity,
+  heart,
+  person,
+  money,
+  cake,
 };

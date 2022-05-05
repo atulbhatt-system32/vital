@@ -1,19 +1,19 @@
-.carousel {
+.AdvanceCarousel {
   padding: 12px 20px;
 }
-.carousel_wrapper {
+.AdvanceCarousel_wrap {
   background-color: #fff;
   border-radius: 40px;
   overflow: hidden;
   filter: drop-shadow(0px 15px 30px rgba(75, 75, 75, 0.302));
 }
-.carousel_img {
+.AdvanceCarousel_img {
   width: 100%;
 }
-.carousel .carousel_body_wrapper {
+.AdvanceCarousel_body_wrap {
   padding: 17px 15px;
 }
-.carousel_textWrap {
+.AdvanceCarousel_textWrap {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -21,30 +21,40 @@
   gap: 8px;
   padding-top: 10px;
 }
-.carousel_title {
+.AdvanceCarousel_title {
   font-size: 20px;
   font-weight: 700;
   line-height: 23.48px;
   color: #2f455c;
 }
-.carousel_info {
+.AdvanceCarousel_info {
   font-size: 11px;
   font-weight: 500;
   line-height: 13px;
   margin: 0;
   text-align: center;
 }
-.carousel_barWrap {
+.AdvanceCarousel_additional {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.AdvanceCarousel_additional_heart, .AdvanceCarousel_additional_person, .AdvanceCarousel_additional_money {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.AdvanceCarousel_barWrap {
   padding: 17px 15px;
 }
-.carousel_barContainer {
+.AdvanceCarousel_barContainer {
   border: 1px solid cyan;
   border-color: linear-gradient(270deg, #34f2c6 2.2%, #1ecef7 100%);
   padding: 4px;
   border-radius: 100px;
   filter: drop-shadow(0px 2px px rgba(75, 75, 75, 0.302));
 }
-.carousel_bar {
+.AdvanceCarousel_bar {
   border-radius: 100px;
   padding: 10px 0;
   background-color: #fff;
@@ -53,7 +63,7 @@
   justify-content: space-between;
   position: relative;
 }
-.carousel_bar::before {
+.AdvanceCarousel_bar::before {
   content: "";
   background-color: red;
   background: linear-gradient(270deg, #34f2c6 2.2%, #1ecef7 100%);
@@ -64,15 +74,15 @@
   left: 0;
   height: 100%;
 }
-.carousel_current {
+.AdvanceCarousel_current {
   font-size: 12px;
   color: #fff;
   z-index: 2;
   padding-left: 15px;
 }
-.carousel_total {
+.AdvanceCarousel_total {
   font-size: 12px;
   color: #000;
   z-index: 2;
   padding-right: 10px;
-}/*# sourceMappingURL=Carousel.module.css.map */
+}/*# sourceMappingURL=AdvanceCarousel.module.css.map */

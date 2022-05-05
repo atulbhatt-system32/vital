@@ -116,4 +116,9 @@ button {
   .connect_wrapper {
     min-width: 10rem;
   }
+  /* 
+  .carousel__inner-slide {
+    display: flex;
+    justify-content: center;
+  } */
 }

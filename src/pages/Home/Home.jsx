@@ -1,4 +1,6 @@
 /* eslint-disable jsx-a11y/anchor-has-content */
+import { CarouselProvider, Slider, Slide } from "pure-react-carousel";
+import "pure-react-carousel/dist/react-carousel.es.css";
 import {
   hero_text,
   how_1_mobile,
@@ -21,6 +23,7 @@ import Play from "../../assets/img/play.svg";
 import Charity from "../../assets/img/charity.svg";
 import Ocassion from "../../components/Ocassion/Ocassion.js";
 import Footer from "../../components/Footer/Footer.js";
+
 const Home = () => {
   return (
     <div className="home">
@@ -118,16 +121,61 @@ const Home = () => {
           <h2 className={styles.carousel_head}>Popular Projects</h2>
 
           {/* Carousel Cards for desktop */}
-          <div className={[styles.carousel_cards, styles.desktop].join(" ")}>
-            <Carousel title="Birthday" />
-            <Carousel title="Gifts" />
-            <Carousel title="Travel" />
-          </div>
+
+          <CarouselProvider
+            naturalSlideWidth={100}
+            naturalSlideHeight={125}
+            totalSlides={3}
+            className={styles.desktop}
+            orientation="horizontal"
+          >
+            <Slider className={styles.carousel_slide}>
+              <Slide index={0} style={{ display: "flex" }}>
+                <div className={styles.multi_cards_holder}>
+                  <Carousel title="Birthday" />
+                  <Carousel title="Gifts" />
+                  <Carousel title="Travel" />
+                </div>
+              </Slide>
+              <Slide index={1}>
+                <div className={styles.multi_cards_holder}>
+                  <Carousel title="Birthday" />
+                  <Carousel title="Gifts" />
+                  <Carousel title="Travel" />
+                </div>
+              </Slide>
+              <Slide index={2}>
+                <div className={styles.multi_cards_holder}>
+                  <Carousel title="Birthday" />
+                  <Carousel title="Gifts" />
+                  <Carousel title="Travel" />
+                </div>
+              </Slide>
+            </Slider>
+          </CarouselProvider>
 
           {/* Carousel Cards for mobile */}
-          <div className={[styles.carousel_cards, styles.mobile].join(" ")}>
-            <Carousel title="Birthday" />
-          </div>
+          <CarouselProvider
+            naturalSlideWidth={100}
+            naturalSlideHeight={125}
+            totalSlides={3}
+            style={{ width: "100%" }}
+            className={styles.mobile}
+          >
+            <Slider style={{ width: "100%" }}>
+              <Slide index={0}>
+                <Carousel title="Birthday" />
+              </Slide>
+              <Slide index={1}>
+                {" "}
+                <Carousel title="Gifts" />
+              </Slide>
+              <Slide index={2}>
+                {" "}
+                <Carousel title="Travel" />
+              </Slide>
+            </Slider>
+          </CarouselProvider>
 
           <div className={styles.wrap_link}>
             <div className={styles.carousel_link}>

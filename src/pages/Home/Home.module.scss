@@ -36,6 +36,12 @@ section.hero_section {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  .desktop {
+    display: none;
+  }
+  .mobile {
+    display: block;
+  }
 }
 .carousel_cards {
   display: flex;
@@ -227,22 +233,10 @@ section.curved_image_section {
     width: 50%;
   }
   // Ocassion:
-  .main_carousel {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: -15%;
-    &_head {
-      color: #2f455c;
-    }
-    &_cards {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-  }
 
+  .carousel.mobile {
+    display: none;
+  }
   .carousel_cards.desktop {
     display: inherit;
   }
@@ -452,6 +446,11 @@ section.curved_image_section {
     color: #2f455c;
     font-size: 3rem;
     font-weight: 900;
+    .carousel_slider {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+    }
   }
   .main_about_left {
     display: flex;
@@ -475,9 +474,36 @@ section.curved_image_section {
   }
 }
 
+@media only screen and (min-width: 768px) {
+  .main_carousel {
+    .mobile {
+      display: none;
+    }
+    .desktop {
+      display: inherit;
+      width: 100%;
+      display: flex;
+      max-height: 30rem;
+      .carousel_slide {
+        width: 100%;
+      }
+      .multi_cards_holder {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+      }
+    }
+  }
+}
 @media only screen and (min-width: 1200px) {
   .main_carousel {
     margin-top: -5%;
+    // .mobile {
+    //   display: none;
+    // }
+    .desktop {
+      display: inherit;
+    }
   }
   .step_info {
     margin: 1rem 0;

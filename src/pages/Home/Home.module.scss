@@ -37,6 +37,13 @@ section.hero_section {
   justify-content: center;
   align-items: center;
 }
+.carousel_cards {
+  display: flex;
+}
+
+.carousel_cards.desktop {
+  display: none;
+}
 
 .wrap_link {
   padding: 42px 0 40px 0;
@@ -221,6 +228,7 @@ section.curved_image_section {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: -15%;
     &_head {
       color: #2f455c;
     }
@@ -231,11 +239,15 @@ section.curved_image_section {
     }
   }
 
+  .carousel_cards.desktop {
+    display: inherit;
+  }
+  .carousel_cards.mobile {
+    display: none;
+  }
+
   // ******************************************
   // ******************************************
-  // section.how_section {
-  //   display: flex;
-  // }
   [alt$="base"] {
     width: 110%;
     height: 100%;
@@ -326,6 +338,11 @@ section.curved_image_section {
     padding-top: 2rem;
     max-width: 54%;
   }
+
+  .step_illustration {
+    display: flex;
+    justify-content: center;
+  }
   .step_head {
     color: #2f455c;
     line-height: 20px;
@@ -335,7 +352,7 @@ section.curved_image_section {
   }
   .step_info {
     color: #2f455c;
-    line-height: 15px;
+    margin: 0;
     font-size: 10px;
     font-weight: 500;
     text-align: center;
@@ -443,5 +460,21 @@ section.curved_image_section {
       padding: 1rem 0;
       max-width: 50%;
     }
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .main_carousel {
+    margin-top: -5%;
+  }
+  .step_info {
+    margin: 1rem 0;
+  }
+
+  .step_1_content_wrap,
+  .step_2_content_wrap,
+  .step_3_content_wrap,
+  .step_4_content_wrap {
+    padding-top: 5rem;
   }
 }

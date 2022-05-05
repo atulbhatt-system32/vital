@@ -114,12 +114,19 @@ const Home = () => {
         {/* About Section Ends */}
 
         {/* Popular Projects Begin */}
-        <section className={styles.main_carousel}>
+        <section className={[styles.main_carousel]}>
           <h2 className={styles.carousel_head}>Popular Projects</h2>
-          <div className={styles.carousel_cards}>
+
+          {/* Carousel Cards for desktop */}
+          <div className={[styles.carousel_cards, styles.desktop].join(" ")}>
             <Carousel title="Birthday" />
             <Carousel title="Gifts" />
             <Carousel title="Travel" />
+          </div>
+
+          {/* Carousel Cards for mobile */}
+          <div className={[styles.carousel_cards, styles.mobile].join(" ")}>
+            <Carousel title="Birthday" />
           </div>
 
           <div className={styles.wrap_link}>
@@ -222,7 +229,7 @@ const Home = () => {
             <div className={styles.step_1}>
               <img src={step_1_base} alt="step_1_base" />
               <div className={styles.step_1_content_wrap}>
-                <div>
+                <div className={styles.step_illustration}>
                   <img src={step1_notebook} alt="notebook" />
                 </div>
                 <span className={styles.step_head}>Create</span>
@@ -234,7 +241,7 @@ const Home = () => {
             <div className={styles.step_2}>
               <img src={step_2_base} alt="step_2_base" />
               <div className={styles.step_2_content_wrap}>
-                <div>
+                <div className={styles.step_illustration}>
                   <img src={step2_share} alt="share" />
                 </div>
                 <span className={styles.step_head}>Share</span>
@@ -247,7 +254,7 @@ const Home = () => {
             <div className={styles.step_3}>
               <img src={step_3_base} alt="step_3_base" />
               <div className={styles.step_3_content_wrap}>
-                <div>
+                <div className={styles.step_illustration}>
                   <img src={step3_collect} alt="collect" />
                 </div>
                 <span className={styles.step_head}>Collect</span>
@@ -260,7 +267,7 @@ const Home = () => {
             <div className={styles.step_4}>
               <img src={step_4_base} alt="step_4_base" />
               <div className={styles.step_4_content_wrap}>
-                <div>
+                <div className={styles.step_illustration}>
                   <img src={step4_give} alt="give" />
                 </div>
                 <span className={styles.step_head}>Give</span>

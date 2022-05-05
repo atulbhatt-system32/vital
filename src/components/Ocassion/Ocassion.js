@@ -30,13 +30,9 @@ export default function Ocassion() {
       {/* Separate */}
       <div className={styles.ocassion_desktop}>
         <div className={styles.ocassion_desktop_top}>
-          {/* <div></div> */}
           <OcassionBoxes title="Wedding" />
-          {/* <div></div> */}
           <OcassionBoxes title="Community" />
-          {/* <div></div> */}
           <OcassionBoxes title="Health" />
-          {/* <div></div> */}
           <OcassionBoxes title="Other common expenses" />
         </div>
         <div className={styles.ocassion_desktop_center}>
@@ -44,13 +40,9 @@ export default function Ocassion() {
         </div>
         <div className={styles.ocassion_desktop_bottom}>
           <OcassionBoxes title="Birthday" />
-          {/* <div></div> */}
           <OcassionBoxes title="Baby shower" />
-          {/* <div></div> */}
           <OcassionBoxes title="Animals" />
-          {/* <div></div> */}
           <OcassionBoxes title="Weekend getaway" />
-          {/* <div></div> */}
         </div>
       </div>
     </div>

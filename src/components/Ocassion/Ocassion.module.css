@@ -64,14 +64,28 @@
     align-items: flex-end;
     width: 100%;
     padding: 0 1rem;
+    margin-bottom: -5px;
   }
   .ocassion_desktop_bottom {
     display: flex;
     width: 100%;
     padding: 0 1rem;
+    margin-top: -42px;
   }
   .ocassion_desktop_center img {
     width: 100%;
     height: 100%;
+  }
+}
+@media only screen and (min-width: 1408px) {
+  .ocassion_mobile {
+    display: none;
+  }
+
+  .ocassion_desktop_bottom {
+    display: flex;
+    width: 100%;
+    padding: 0 1rem;
+    margin-top: -52px;
   }
 }/*# sourceMappingURL=Ocassion.module.css.map */

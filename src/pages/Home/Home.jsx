@@ -177,7 +177,7 @@ const Home = () => {
             </Slider>
           </CarouselProvider>
 
-          <div className={styles.wrap_link}>
+          {/* <div className={styles.wrap_link}>
             <div className={styles.carousel_link}>
               <a href="*" className={styles.circle}></a>
               <a
@@ -188,7 +188,7 @@ const Home = () => {
               <a href="*" className={styles.circle}></a>
               <a href="*" className={styles.circle}></a>
             </div>
-          </div>
+          </div> */}
         </section>
         {/* Popular Projects End */}
 

@@ -77,9 +77,10 @@ section.hero_section {
   background-color: #f9fcfc;
   margin-top: 5rem;
   &_name {
-    font-size: 23px;
-    font-weight: 700;
+    font-size: 3rem;
+    font-weight: 900;
     text-align: center;
+    color: #2f455c;
     padding-bottom: 10px;
   }
 }
@@ -233,8 +234,26 @@ section.curved_image_section {
     width: 50%;
   }
   // Ocassion:
+  <<<<<<< HEAD ======= .main_ocassion {
+    padding: 0 100px;
+  }
 
-  .carousel.mobile {
+  .main_carousel {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: -15%;
+    &_head {
+      color: #2f455c;
+    }
+    &_cards {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  >>>>>>>e3d6338546a28eb1260cc20789c468cc039de3fb .carousel.mobile {
     display: none;
   }
   .carousel_cards.desktop {
@@ -354,7 +373,8 @@ section.curved_image_section {
     margin: 0;
     font-weight: 500;
     text-align: center;
-    font-size: 14px;
+    font-size: 10px;
+    margin: 1rem 0;
   }
   [alt="notebook"] {
     height: 100%;
@@ -473,7 +493,6 @@ section.curved_image_section {
     }
   }
 }
-
 @media only screen and (min-width: 768px) {
   .main_carousel {
     .mobile {
@@ -495,7 +514,8 @@ section.curved_image_section {
     }
   }
 }
-@media only screen and (min-width: 1200px) {
+
+@media only screen and (min-width: 1408px) {
   .main_carousel {
     margin-top: -5%;
     .desktop {
@@ -503,7 +523,7 @@ section.curved_image_section {
     }
   }
   .step_info {
-    margin: 1rem 0;
+    font-size: 14px;
   }
 
   .step_1_content_wrap,

@@ -110,6 +110,7 @@ button {
     display: flex;
     padding: 1rem;
     min-width: fit-content;
+    font-weight: 500;
   }
 
   .connect_wrapper {

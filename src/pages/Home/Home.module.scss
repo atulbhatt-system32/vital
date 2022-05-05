@@ -69,6 +69,7 @@ section.hero_section {
   align-items: center;
   padding: 30px 30px 0 30px;
   background-color: #f9fcfc;
+  margin-top: 5rem;
   &_name {
     font-size: 23px;
     font-weight: 700;
@@ -222,6 +223,9 @@ section.curved_image_section {
     display: none;
   }
 
+  .hero_section_text_wrapper img {
+    width: 50%;
+  }
   // Ocassion:
   .main_carousel {
     display: flex;
@@ -267,11 +271,12 @@ section.curved_image_section {
   }
 
   .hero_section_head {
-    font-size: 35px;
+    font-size: 2.5rem;
     font-weight: 700;
     color: #2f455c;
     line-height: 40.7px;
     padding: 3rem 0;
+    margin-bottom: 1rem;
   }
   .step_1 {
     position: relative;
@@ -353,9 +358,9 @@ section.curved_image_section {
   .step_info {
     color: #2f455c;
     margin: 0;
-    font-size: 10px;
     font-weight: 500;
     text-align: center;
+    font-size: 14px;
   }
   [alt="notebook"] {
     height: 100%;
@@ -423,6 +428,7 @@ section.curved_image_section {
   }
   .card_wrapper {
     padding: 1rem 0;
+    max-width: 90%;
   }
   .card_text {
     padding-bottom: 1rem;
@@ -441,6 +447,12 @@ section.curved_image_section {
     padding: 0;
     padding-bottom: 15%;
   }
+
+  .main_carousel h2 {
+    color: #2f455c;
+    font-size: 3rem;
+    font-weight: 900;
+  }
   .main_about_left {
     display: flex;
     flex-direction: column;
@@ -450,7 +462,7 @@ section.curved_image_section {
     width: 100%;
 
     .main_about_left_content {
-      padding: 5% 5%;
+      padding: 5% 10%;
       width: 50%;
     }
     .main_text {

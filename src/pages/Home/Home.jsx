@@ -1,11 +1,5 @@
 /* eslint-disable jsx-a11y/anchor-has-content */
-import {
-  CarouselProvider,
-  Slider,
-  Slide,
-  Dot,
-  DotGroup,
-} from "pure-react-carousel";
+import { CarouselProvider, Slider, Slide, DotGroup } from "pure-react-carousel";
 import "pure-react-carousel/dist/react-carousel.es.css";
 import {
   hero_text,
@@ -28,6 +22,7 @@ import styles from "./Home.module.scss";
 import Play from "../../assets/img/play.svg";
 import Charity from "../../assets/img/charity.svg";
 import Ocassion from "../../components/Ocassion/Ocassion.js";
+import OcassionDesktop from "../../components/Ocassion/OcassionDesktop.js";
 import Footer from "../../components/Footer/Footer.js";
 
 const Home = () => {
@@ -123,7 +118,7 @@ const Home = () => {
         {/* About Section Ends */}
 
         {/* Popular Projects Begin */}
-        <section className={[styles.main_carousel]}>
+        <section className={styles.main_carousel}>
           <h2 className={styles.carousel_head}>Popular Projects</h2>
 
           {/* Carousel Cards for desktop */}
@@ -372,19 +367,37 @@ const Home = () => {
           <span className={styles.main_ocassion_name}>
             Birthday Party And Wedding
           </span>
-          <Ocassion />
-          {/* <div className={styles.wrap_link}>
-            <div className={styles.carousel_link}>
-              <a href="*" className={styles.circle}></a>
-              <a
-                href="*"
-                className={[styles.circle, styles.circle_active].join(" ")}
-              ></a>
-              <a href="*" className={styles.circle}></a>
-              <a href="*" className={styles.circle}></a>
-              <a href="*" className={styles.circle}></a>
+          <CarouselProvider
+            naturalSlideWidth={100}
+            naturalSlideHeight={125}
+            totalSlides={5}
+            style={{ width: "100%" }}
+            className={styles.mobile}
+          >
+            <Slider style={{ width: "100%", maxHeight: "40rem" }}>
+              <Slide index={0}>
+                <Ocassion />
+              </Slide>
+              <Slide index={1}>
+                <Ocassion />
+              </Slide>
+              <Slide index={2}>
+                <Ocassion />
+              </Slide>
+              <Slide index={3}>
+                <Ocassion />
+              </Slide>
+              <Slide index={4}>
+                <Ocassion />
+              </Slide>
+            </Slider>
+
+            <div className={styles.carousel_controls}>
+              <DotGroup showAsSelectedForCurrentSlideOnly />
             </div>
-          </div> */}
+          </CarouselProvider>
+          {/* Ocassion Desktop */}
+          <OcassionDesktop />
         </section>
       </main>
       <Footer />

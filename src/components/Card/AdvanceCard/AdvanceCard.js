@@ -1,4 +1,3 @@
-import React from "react";
 import GradientBtn from "../../Buttons/GradientButton/GradientBtn";
 import styles from "./AdvanceCard.module.scss";
 export default function AdvanceCard(props) {

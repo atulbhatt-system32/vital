@@ -15,15 +15,17 @@ import {
   step_3_base,
   step_4_base,
 } from "../../assets/img";
-import { BasicCard, GradientBtn } from "../../components";
-import Carousel from "../../components/Carousel/Carousel";
-import AdvanceCard from "../../components/Card/AdvanceCard/AdvanceCard";
+import {
+  AdvanceCard,
+  BasicCard,
+  Carousel,
+  GradientBtn,
+  Ocassion,
+  OcassionDesktop,
+} from "../../components";
 import styles from "./Home.module.scss";
 import Play from "../../assets/img/play.svg";
 import Charity from "../../assets/img/charity.svg";
-import Ocassion from "../../components/Ocassion/Ocassion.js";
-import OcassionDesktop from "../../components/Ocassion/OcassionDesktop.js";
-import Footer from "../../components/Footer/Footer.js";
 
 const Home = () => {
   return (
@@ -400,7 +402,6 @@ const Home = () => {
           <OcassionDesktop />
         </section>
       </main>
-      <Footer />
     </div>
   );
 };

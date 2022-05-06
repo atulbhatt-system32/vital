@@ -1,5 +1,5 @@
 import { logo } from "assets/img";
-import { GradientBtn } from "components";
+import { Footer, GradientBtn } from "components";
 import { Routes, Route, BrowserRouter as Router } from "react-router-dom";
 import routes from "routes";
 function App() {
@@ -20,7 +20,7 @@ function App() {
             </div>
             <div className="nav_links">
               <div className="links_wrapper">
-                <a href="*">Home</a>
+                <a href="/">Home</a>
                 <a href="*">About Us</a>
                 <a href="/projects">Projects</a>
                 <a href="*">Contact</a>
@@ -43,6 +43,7 @@ function App() {
           ))}
         </Routes>
       </Router>
+      <Footer />
     </div>
   );
 }

@@ -1,8 +1,8 @@
 import { logo } from "./assets/img";
 import { GradientBtn } from "./components";
 // import Home from "./pages/Home/Home";
-import AdvanceCarousel from "./components/AdvanceCarousel/AdvanceCarousel";
-
+// import AdvanceCarousel from "./components/AdvanceCarousel/AdvanceCarousel";
+import SearchCategory from "./components/SearchCategory/SearchCategory";
 function App() {
   return (
     <div className="App">
@@ -34,10 +34,11 @@ function App() {
         </nav>
       </header>
       {/* <Home /> */}
-      <AdvanceCarousel />
+      {/* <AdvanceCarousel /> */}
       {/* <AdvanceCarousel />
       <AdvanceCarousel />
       <AdvanceCarousel /> */}
+      <SearchCategory />
     </div>
   );
 }

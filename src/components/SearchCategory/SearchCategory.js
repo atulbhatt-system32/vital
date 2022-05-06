@@ -1,15 +1,10 @@
 import React from "react";
 import styles from "./SearchCategory.module.scss";
-
+import GradientBtn from "../Buttons/GradientButton/GradientBtn";
 export default function SearchCategory() {
   return (
     <div className={styles.SearchCategory}>
       <div className={styles.SearchCategory_wrap}>
-        {/* LOGO */}
-        <div className={styles.SearchCategory_logo}>
-          <div className={styles.SearchCategory_logo_img}></div>
-          <div className={styles.SearchCategory_logo_text}></div>
-        </div>
         {/* HEAD*/}
         <h1 className={styles.SearchCategory_head}>search by categories</h1>
         {/* INPUT BOX */}
@@ -18,7 +13,7 @@ export default function SearchCategory() {
             {/* NAME */}
             <div className={styles.SearchCategory_inputBox_name}>
               <div className={styles.SearchCategory_inputBox_name_text}>
-                name
+                Name
               </div>
               <input
                 placeholder="Enter your name"
@@ -28,7 +23,7 @@ export default function SearchCategory() {
             {/* TYPE */}
             <div className={styles.SearchCategory_inputBox_type}>
               <div className={styles.SearchCategory_inputBox_type_text}>
-                name
+                Type
               </div>
               <input
                 placeholder="Select type"
@@ -38,7 +33,7 @@ export default function SearchCategory() {
             {/* CATEGORY */}
             <div className={styles.SearchCategory_inputBox_category}>
               <div className={styles.SearchCategory_inputBox_category_text}>
-                name
+                Category
               </div>
               <input
                 placeholder="Select type"
@@ -47,7 +42,7 @@ export default function SearchCategory() {
             </div>
             {/* BUTTON */}
             <div className="SearchCategory_btn_wrap">
-              <button></button>
+              <GradientBtn text="Search" />
             </div>
           </div>
         </div>

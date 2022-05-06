@@ -20,7 +20,7 @@
     align-items: flex-start;
     flex-direction: column;
     gap: 8px;
-    padding: 10px 0 30px 0;
+    padding-bottom: 5%;
   }
   .projectCard_text_additional {
     padding: 0 12px;
@@ -63,7 +63,7 @@
   }
 
   &_barWrap {
-    padding: 17px 15px;
+    padding: 17px 0;
   }
   &_barContainer {
     border: 1px solid cyan;
@@ -74,7 +74,7 @@
   }
   &_bar {
     border-radius: 100px;
-    padding: 10px 0;
+    padding: 2%;
     background-color: #fff;
     display: flex;
     align-items: center;
@@ -109,6 +109,12 @@
 
 @media only screen and (min-width: 768px) {
   .projectCard {
-    flex: 1;
+    max-width: 19rem;
+    margin-left: 1.5rem;
+    padding: 2rem 0;
+    &_img {
+      max-height: 10rem;
+      object-fit: cover;
+    }
   }
 }

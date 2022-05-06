@@ -1,6 +1,6 @@
 import { logo } from "assets/img";
 import { Footer, GradientBtn } from "components";
-import { Routes, Route, BrowserRouter as Router } from "react-router-dom";
+import { Routes, Route, HashRouter as Router } from "react-router-dom";
 import routes from "routes";
 function App() {
   return (

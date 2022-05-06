@@ -1,8 +1,8 @@
-.AdvanceCarousel {
+.projectCard {
   padding: 12px 20px;
 }
 
-.AdvanceCarousel_wrap {
+.projectCard_wrap {
   background-color: #fff;
   border-radius: 40px;
   overflow: hidden;
@@ -10,15 +10,15 @@
           filter: drop-shadow(0px 15px 30px rgba(75, 75, 75, 0.302));
 }
 
-.AdvanceCarousel_img {
+.projectCard_img {
   width: 100%;
 }
 
-.AdvanceCarousel_body_wrap {
+.projectCard_body_wrap {
   padding: 17px;
 }
 
-.AdvanceCarousel_textWrap {
+.projectCard_textWrap {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -36,18 +36,18 @@
   padding: 10px 0 30px 0;
 }
 
-.AdvanceCarousel .AdvanceCarousel_text_additional {
+.projectCard .projectCard_text_additional {
   padding: 0 12px;
 }
 
-.AdvanceCarousel_title {
+.projectCard_title {
   font-size: 15px;
   font-weight: 700;
   line-height: 17.5px;
   color: #2f455c;
 }
 
-.AdvanceCarousel_info {
+.projectCard_info {
   color: #2f455c;
   font-size: 10px;
   font-weight: 500;
@@ -56,7 +56,7 @@
   text-align: left;
 }
 
-.AdvanceCarousel_additional {
+.projectCard_additional {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -68,7 +68,7 @@
           align-items: center;
 }
 
-.AdvanceCarousel_additional_heart, .AdvanceCarousel_additional_person, .AdvanceCarousel_additional_money {
+.projectCard_additional_heart, .projectCard_additional_person, .projectCard_additional_money {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -81,19 +81,19 @@
   gap: 6px;
 }
 
-.AdvanceCarousel_additional_heart span,
-.AdvanceCarousel_additional_person span,
-.AdvanceCarousel_additional_money span {
+.projectCard_additional_heart span,
+.projectCard_additional_person span,
+.projectCard_additional_money span {
   color: #2f455c;
   font-weight: 500;
   font-size: 12px;
 }
 
-.AdvanceCarousel_barWrap {
+.projectCard_barWrap {
   padding: 17px 15px;
 }
 
-.AdvanceCarousel_barContainer {
+.projectCard_barContainer {
   border: 1px solid cyan;
   border-color: linear-gradient(270deg, #34f2c6 2.2%, #1ecef7 100%);
   padding: 4px;
@@ -102,7 +102,7 @@
           filter: drop-shadow(0px 2px px rgba(75, 75, 75, 0.302));
 }
 
-.AdvanceCarousel_bar {
+.projectCard_bar {
   border-radius: 100px;
   padding: 10px 0;
   background-color: #fff;
@@ -118,7 +118,7 @@
   position: relative;
 }
 
-.AdvanceCarousel_bar::before {
+.projectCard_bar::before {
   content: "";
   background-color: red;
   background: -webkit-gradient(linear, right top, left top, color-stop(2.2%, #34f2c6), to(#1ecef7));
@@ -131,17 +131,17 @@
   height: 100%;
 }
 
-.AdvanceCarousel_current {
+.projectCard_current {
   font-size: 12px;
   color: #fff;
   z-index: 2;
   padding-left: 15px;
 }
 
-.AdvanceCarousel_total {
+.projectCard_total {
   font-size: 12px;
   color: #000;
   z-index: 2;
   padding-right: 10px;
 }
-/*# sourceMappingURL=AdvanceCarousel.module.css.map */
+/*# sourceMappingURL=ProjectCard.module.css.map */

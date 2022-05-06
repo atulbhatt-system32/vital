@@ -1,5 +1,6 @@
 import styles from "./Projects.module.scss";
-import GradientBtn from "components/Buttons/GradientButton/GradientBtn";
+import { GradientBtn, ProjectCard } from "components/index";
+
 export default function Projects() {
   return (
     <div className={styles.projects}>

@@ -6,7 +6,7 @@ export default function Projects() {
     <div className={styles.projects}>
       <div className={styles.projects_wrap}>
         {/* HEAD*/}
-        <h1 className={styles.projects_head}>search by categories</h1>
+        <span className={styles.projects_head}>search by categories</span>
         {/* INPUT BOX */}
         <div className={styles.projects_inputBox}>
           <div className={styles.projects_inputBox_wrap}>

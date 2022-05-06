@@ -19,6 +19,7 @@ import heart from "./heart.svg";
 import person from "./person.svg";
 import money from "./money.svg";
 import cake from "./cake.svg";
+import searchcategory from "./search-category-bg.svg";
 
 export {
   logo,
@@ -42,4 +43,5 @@ export {
   person,
   money,
   cake,
+  searchcategory,
 };

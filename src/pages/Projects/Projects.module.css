@@ -4,12 +4,20 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 30px;
+  gap: 25px;
 }
 .projects_head {
   color: #2f455c;
   text-transform: uppercase;
   font-size: 20px;
+  font-weight: 700;
+  background-image: url("../../assets/img/search-category-bg.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  padding: 25px 0;
 }
 .projects_inputBox {
   display: flex;

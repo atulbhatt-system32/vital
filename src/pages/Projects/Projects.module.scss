@@ -5,12 +5,20 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 30px;
+    gap: 25px;
   }
   &_head {
     color: #2f455c;
     text-transform: uppercase;
     font-size: 20px;
+    font-weight: 700;
+    background-image: url("../../assets/img/search-category-bg.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    padding: 25px 0;
   }
   &_inputBox {
     display: flex;
@@ -19,7 +27,6 @@
     align-items: center;
     &_wrap {
       padding: 1.2rem 1rem 2.5rem 1rem;
-      // border: 1px solid #000;
       border-radius: 25px;
       min-width: 320px;
       filter: drop-shadow(0px 15px 10px rgba(#b3b1b1, 35%));

@@ -1,5 +1,6 @@
 .projects {
   &_wrap {
+    padding-bottom: 25px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -17,9 +18,12 @@
     justify-content: center;
     align-items: center;
     &_wrap {
-      padding: 2rem 1rem;
-      border: 1px solid #000;
+      padding: 1.2rem 1rem 2.5rem 1rem;
+      // border: 1px solid #000;
       border-radius: 25px;
+      min-width: 320px;
+      filter: drop-shadow(0px 15px 10px rgba(#b3b1b1, 35%));
+      background-color: #fff;
     }
     &_name,
     &_type,
@@ -28,7 +32,7 @@
       flex-direction: column;
       align-items: flex-start;
       justify-content: center;
-      gap: 5px;
+      gap: 8px;
       padding-bottom: 15px;
 
       &_text {
@@ -46,15 +50,18 @@
         padding: 8px 10px;
         border: 1px solid #e5e5e5;
         font-family: "Raleway", sans-serif;
+        width: 100%;
       }
     }
   }
 
   &_btn_wrap {
     & button {
-      font-size: 21px;
+      font-size: 18px;
       font-weight: 400;
       line-height: 24.5px;
+      padding: 0.4rem 0;
+      color: #fff;
     }
   }
 }

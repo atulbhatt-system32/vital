@@ -1,7 +1,7 @@
-import { logo } from "./assets/img";
-import { GradientBtn } from "./components";
-import Home from "./pages/Home/Home";
-
+import { logo } from "assets/img";
+import { GradientBtn } from "components";
+import { Routes, Route, BrowserRouter as Router } from "react-router-dom";
+import routes from "routes";
 function App() {
   return (
     <div className="App">
@@ -32,7 +32,17 @@ function App() {
           </div>
         </nav>
       </header>
-      <Home />
+      <Router>
+        <Routes>
+          {routes.map((route, index) => (
+            <Route
+              path={route.path}
+              key={"route-key-" + index}
+              element={<route.component />}
+            />
+          ))}
+        </Routes>
+      </Router>
     </div>
   );
 }

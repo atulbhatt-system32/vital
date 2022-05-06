@@ -20,9 +20,25 @@ function App() {
             </div>
             <div className="nav_links">
               <div className="links_wrapper">
-                <a href="/">Home</a>
+                <a
+                  href="/"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    window.location.hash = "/";
+                  }}
+                >
+                  Home
+                </a>
                 <a href="*">About Us</a>
-                <a href="/projects">Projects</a>
+                <a
+                  href="/projects"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    window.location.hash = "/projects";
+                  }}
+                >
+                  Projects
+                </a>
                 <a href="*">Contact</a>
               </div>
               <div className="connect_wrapper">

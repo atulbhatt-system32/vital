@@ -43,6 +43,11 @@ export default function Projects() {
           </div>
         </div>
       </div>
+      <div className={styles.projectcards_wrapper}>
+        {[1, 2, 3, 4].map((item) => (
+          <ProjectCard key={item} />
+        ))}
+      </div>
     </div>
   );
 }

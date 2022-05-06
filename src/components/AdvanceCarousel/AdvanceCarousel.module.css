@@ -11,28 +11,32 @@
   width: 100%;
 }
 .AdvanceCarousel_body_wrap {
-  padding: 17px 15px;
+  padding: 17px;
 }
 .AdvanceCarousel_textWrap {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   flex-direction: column;
   gap: 8px;
-  padding-top: 10px;
+  padding: 10px 0 30px 0;
+}
+.AdvanceCarousel .AdvanceCarousel_text_additional {
+  padding: 0 12px;
 }
 .AdvanceCarousel_title {
-  font-size: 20px;
+  font-size: 15px;
   font-weight: 700;
-  line-height: 23.48px;
+  line-height: 17.5px;
   color: #2f455c;
 }
 .AdvanceCarousel_info {
-  font-size: 11px;
+  color: #2f455c;
+  font-size: 10px;
   font-weight: 500;
-  line-height: 13px;
+  line-height: 11.6px;
   margin: 0;
-  text-align: center;
+  text-align: left;
 }
 .AdvanceCarousel_additional {
   display: flex;
@@ -43,6 +47,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 6px;
+}
+.AdvanceCarousel_additional_heart span, .AdvanceCarousel_additional_person span, .AdvanceCarousel_additional_money span {
+  color: #2f455c;
+  font-weight: 500;
+  font-size: 12px;
 }
 .AdvanceCarousel_barWrap {
   padding: 17px 15px;

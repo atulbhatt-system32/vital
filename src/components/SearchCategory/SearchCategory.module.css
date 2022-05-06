@@ -1,0 +1,41 @@
+.SearchCategory_wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.SearchCategory_logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.SearchCategory_head {
+  color: #2f455c;
+}
+.SearchCategory_inputBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.SearchCategory_inputBox_wrap {
+  padding: 2rem;
+}
+.SearchCategory_inputBox_name, .SearchCategory_inputBox_type, .SearchCategory_inputBox_category {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+.SearchCategory_inputBox_name_text, .SearchCategory_inputBox_type_text, .SearchCategory_inputBox_category_text {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  color: #2f455c;
+}
+.SearchCategory_inputBox_name_input, .SearchCategory_inputBox_type_input, .SearchCategory_inputBox_category_input {
+  color: #000;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+}/*# sourceMappingURL=SearchCategory.module.css.map */

@@ -35,9 +35,9 @@ function App() {
       </header>
       {/* <Home /> */}
       <AdvanceCarousel />
+      {/* <AdvanceCarousel />
       <AdvanceCarousel />
-      <AdvanceCarousel />
-      <AdvanceCarousel />
+      <AdvanceCarousel /> */}
     </div>
   );
 }

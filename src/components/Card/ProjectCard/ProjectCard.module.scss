@@ -106,3 +106,9 @@
     padding-right: 10px;
   }
 }
+
+@media only screen and (min-width: 768px) {
+  .projectCard {
+    flex: 1;
+  }
+}

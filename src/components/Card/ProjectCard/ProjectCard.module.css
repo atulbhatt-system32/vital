@@ -144,4 +144,12 @@
   z-index: 2;
   padding-right: 10px;
 }
+
+@media only screen and (min-width: 768px) {
+  .projectCard {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+}
 /*# sourceMappingURL=ProjectCard.module.css.map */

@@ -93,18 +93,18 @@ export default function ProjectDetails() {
         </div>
       </div>
       {/* DETAILS */}
-      <div className={styles.ProjectDetails_details}>
-        <span className={styles.ProjectDetails_details_mainHead}>
-          What is Lorem Ipsum
+      <div className={styles.projectDetails_details}>
+        <span className={styles.projectDetails_details_mainHead}>
+          What is Lorem Ipsum?
         </span>
-        <p className={styles.ProjectDetails_details_mainHead_text}>
+        <p className={styles.projectDetails_details_text}>
           Lorem Ipsum is simply dummy text of the printing and typesetting
           industry. Lorem Ipsum has been the industry's standard dummy text ever
           since the 1500s, when an unknown printer took a galley of type and
           scrambled it to make a type specimen{" "}
         </p>
         <img src={worker} alt="worker" />
-        <p className={styles.ProjectDetails_details_mainHead_text}>
+        <p className={styles.projectDetails_details_text}>
           Lorem Ipsum is simply dummy text of the printing and typesetting
           industry. Lorem Ipsum has been the industry's standard dummy text ever
           since the 1500s, when an unknown printer took a galley of type and
@@ -115,7 +115,7 @@ export default function ProjectDetails() {
           more recently with desktop publishing software like Aldus PageMaker
           including versions of Lorem Ipsum.{" "}
         </p>
-        <p>
+        <p className={styles.projectDetails_details_text}>
           Lorem Ipsum is simply dummy text of the printing and typesetting
           industry. Lorem Ipsum has been the industry's standard dummy text ever
           since the 1500s, when an unknown printer took a galley of type and
@@ -125,15 +125,16 @@ export default function ProjectDetails() {
           the release of Letraset sheets containing Lorem Ipsum passages, and
           more
         </p>
-        <span className={styles.ProjectDetails_details_secondaryHead}>
+        <span className={styles.projectDetails_details_secondaryHead}>
           What is Lorem Ipsum?
         </span>
-        <p>
+        <p className={styles.projectDetails_details_text}>
           Lorem Ipsum is simply dummy text of the printing and typesetting
           industry. Lorem Ipsum has been the industry's standard dummy text ever
           since the 1500s, when an unknown printer took a galley of type and
           scrambled it to make a type specimen book.
         </p>
+        <img src={donation} alt="donation" />
       </div>
 
       {/* Organizer */}

@@ -2,7 +2,6 @@
   &_participate {
     padding-bottom: 1rem;
     &_img_wrap {
-      // min-height: 250px;
       & img {
         width: 100%;
         height: 100%;
@@ -14,10 +13,10 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
+      padding-top: 1rem;
       gap: 30px;
       &_head {
-        display: block;
-        text-align: center;
+        padding-right: rem;
         font-weight: 700;
         font-size: 26px;
         line-height: 30.5px;
@@ -94,6 +93,33 @@
         font-size: 16px;
         line-height: 19px;
       }
+    }
+  }
+  &_details {
+    & img {
+      width: 100%;
+      height: 100%;
+      border-radius: 20px;
+    }
+    padding: 1.5rem 1rem;
+    border-bottom: 1px solid #adadad;
+    &_mainHead {
+      font-weight: 700;
+      font-size: 22px;
+      line-height: 26px;
+      color: #2f455c;
+    }
+    &_text {
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 22px;
+      color: #2f455c;
+    }
+    &_secondaryHead {
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 23.5px;
+      color: #2f455c;
     }
   }
 }

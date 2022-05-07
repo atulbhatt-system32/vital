@@ -169,6 +169,9 @@
       }
     }
     section.organizer_wrapper {
+      &_mobile {
+        display: none;
+      }
       padding: 1.5rem;
       border-top: 2px solid #e5e5e5;
       .organizer_name {
@@ -238,9 +241,14 @@
           .content_details {
             .categories_wrapper {
               display: flex;
+
               .category_box {
+                width: unset;
                 .left {
                   width: unset;
+                  min-width: fit-content;
+                  font-size: 1rem;
+                  margin-right: 1rem;
                 }
               }
               .category_box + .category_box {
@@ -253,7 +261,6 @@
       }
       .target_amount {
         padding-top: 15px;
-        border-top: 1px solid #adadad;
         .target_desktop {
           display: flex;
           flex-direction: column;
@@ -293,6 +300,31 @@
 
           .share {
             padding-left: 20px;
+          }
+        }
+      }
+
+      .details :nth-child(-n + 2) {
+        display: none;
+      }
+
+      //select nth child of type img
+      .details img:nth-of-type(1) {
+        display: block;
+        margin: 0 auto;
+        width: 40%;
+        object-fit: cover;
+        height: 10rem;
+      }
+
+      section.organizer_wrapper {
+        display: none;
+        &_mobile {
+          display: flex;
+          padding: 2rem 0;
+          .label {
+            font-weight: 700;
+            margin-right: 1rem;
           }
         }
       }

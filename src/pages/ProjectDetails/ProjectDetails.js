@@ -149,6 +149,12 @@ export default function ProjectDetails() {
             </div>
           </div>
         </section>
+        <section className={styles.organizer_wrapper_mobile}>
+          <span className={styles.label}>Organizer</span>
+          <span className={styles.value}>
+            erd158qsdfqqdfqc4gutf9tqmqqlxmepm5mepm5t2dz99
+          </span>
+        </section>
       </div>
     </div>
   );

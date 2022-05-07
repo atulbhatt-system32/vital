@@ -7,6 +7,7 @@ import {
   person,
   money,
   share,
+  donation,
 } from "../../assets/img/index";
 import { GradientBtn } from "../../components/index";
 export default function ProjectDetails() {

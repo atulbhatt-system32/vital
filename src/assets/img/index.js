@@ -20,6 +20,11 @@ import person from "./person.svg";
 import money from "./money.svg";
 import cake from "./cake.svg";
 import searchcategory from "./search-category-bg.svg";
+import worker from "./worker.svg";
+import donation from "./donation.svg";
+import john from "./john.svg";
+import location from "./location.svg";
+import share from "./share.svg";
 
 export {
   logo,
@@ -44,4 +49,9 @@ export {
   money,
   cake,
   searchcategory,
+  worker,
+  donation,
+  john,
+  location,
+  share,
 };

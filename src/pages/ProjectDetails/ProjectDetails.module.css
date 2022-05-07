@@ -10,6 +10,7 @@
 }
 .projectDetails .project_details_card .participate {
   padding-bottom: 1rem;
+  border-bottom: 2px solid #e5e5e5;
 }
 .projectDetails .project_details_card .participate .content {
   display: flex;
@@ -79,42 +80,51 @@
   font-family: "Raleway", sans-serif;
   padding: 0.5rem 1.3rem;
 }
-.projectDetails .project_details_card .copy_wrapper {
+.projectDetails .project_details_card .target_amount .target_desktop {
+  display: none;
+}
+.projectDetails .project_details_card .target_amount .copy_wrapper {
   display: flex;
   flex-direction: column;
   padding: 4rem 1rem;
-  border-top: 1px solid #adadad;
   border-bottom: 1px solid #adadad;
   gap: 10px;
 }
-.projectDetails .project_details_card .copy_wrapper .input {
+.projectDetails .project_details_card .target_amount .copy_wrapper .inputDesktop {
+  display: none;
   border-radius: 100px;
   font-family: "Raleway", sans-serif;
   padding: 0.8rem 0;
   border: 1px solid #adadad;
 }
-.projectDetails .project_details_card .copy_wrapper .bottom {
+.projectDetails .project_details_card .target_amount .copy_wrapper .inputMobile {
+  border-radius: 100px;
+  font-family: "Raleway", sans-serif;
+  padding: 0.8rem 0;
+  border: 1px solid #adadad;
+}
+.projectDetails .project_details_card .target_amount .copy_wrapper .bottom {
   display: flex;
   justify-content: space-between;
   padding: 0 1rem;
 }
-.projectDetails .project_details_card .copy_wrapper .copy_btn {
+.projectDetails .project_details_card .target_amount .copy_wrapper .copy_btn {
   border-radius: 100px;
   font-family: "Raleway", sans-serif;
   background-color: #fff;
   font-weight: 400;
   font-size: 21px;
   line-height: 25px;
-  border: 1px solid #000;
+  border: 1px solid rgb(36, 34, 34);
   padding: 0.3rem 2.4rem;
 }
-.projectDetails .project_details_card .copy_wrapper .share {
+.projectDetails .project_details_card .target_amount .copy_wrapper .share {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 5px;
 }
-.projectDetails .project_details_card .copy_wrapper .share span {
+.projectDetails .project_details_card .target_amount .copy_wrapper .share span {
   font-weight: 700;
   font-size: 16px;
   line-height: 19px;
@@ -198,8 +208,10 @@
 @media only screen and (min-width: 768px) {
   .projectDetails .project_details_card {
     margin: 2rem 8rem;
-    border: 1px solid gray;
     padding: 1rem;
+    filter: drop-shadow(0px 15px 10px rgba(179, 177, 177, 0.35));
+    background-color: #fff;
+    border-radius: 0.8rem;
   }
   .projectDetails .project_details_card .participate .content {
     flex-direction: row;
@@ -217,5 +229,49 @@
   .projectDetails .project_details_card .participate .content .content_details .categories_wrapper .category_box + .category_box {
     padding-top: 0;
     padding-left: 1rem;
+  }
+  .projectDetails .project_details_card .target_amount {
+    padding-top: 15px;
+    border-top: 1px solid #adadad;
+  }
+  .projectDetails .project_details_card .target_amount .target_desktop {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 0 1rem;
+  }
+  .projectDetails .project_details_card .target_amount .target_desktop span {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 28.5px;
+  }
+  .projectDetails .project_details_card .target_amount .target_desktop .money {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .projectDetails .project_details_card .target_amount .target_desktop .money span {
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 32px;
+  }
+  .projectDetails .project_details_card .target_amount .copy_wrapper {
+    display: flex;
+    flex-direction: row;
+    padding: 2rem 1rem;
+  }
+  .projectDetails .project_details_card .target_amount .copy_wrapper .bottom {
+    display: flex;
+  }
+  .projectDetails .project_details_card .target_amount .copy_wrapper .inputDesktop {
+    display: flex;
+    width: 50%;
+    text-align: center;
+  }
+  .projectDetails .project_details_card .target_amount .copy_wrapper .inputMobile {
+    display: none;
+  }
+  .projectDetails .project_details_card .target_amount .copy_wrapper .share {
+    padding-left: 20px;
   }
 }/*# sourceMappingURL=ProjectDetails.module.css.map */

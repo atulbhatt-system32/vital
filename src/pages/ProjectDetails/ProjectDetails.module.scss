@@ -12,6 +12,7 @@
 
     .participate {
       padding-bottom: 1rem;
+      border-bottom: 2px solid #e5e5e5;
 
       .content {
         display: flex;
@@ -87,47 +88,59 @@
         }
       }
     }
-    .copy_wrapper {
-      display: flex;
-      flex-direction: column;
-      padding: 4rem 1rem;
-      border-top: 1px solid #adadad;
-      border-bottom: 1px solid #adadad;
-      gap: 10px;
+    .target_amount {
+      .target_desktop {
+        display: none;
+      }
+      .copy_wrapper {
+        display: flex;
+        flex-direction: column;
+        padding: 4rem 1rem;
+        border-bottom: 1px solid #adadad;
+        gap: 10px;
 
-      .input {
-        border-radius: 100px;
-        font-family: "Raleway", sans-serif;
-        padding: 0.8rem 0;
-        border: 1px solid #adadad;
-      }
-      .bottom {
-        display: flex;
-        justify-content: space-between;
-        padding: 0 1rem;
-      }
-      .copy_btn {
-        border-radius: 100px;
-        font-family: "Raleway", sans-serif;
-        background-color: #fff;
-        font-weight: 400;
-        font-size: 21px;
-        line-height: 25px;
-        border: 1px solid #000;
-        padding: 0.3rem 2.4rem;
-      }
-      .share {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 5px;
-        & span {
-          font-weight: 700;
-          font-size: 16px;
-          line-height: 19px;
+        .inputDesktop {
+          display: none;
+          border-radius: 100px;
+          font-family: "Raleway", sans-serif;
+          padding: 0.8rem 0;
+          border: 1px solid #adadad;
+        }
+        .inputMobile {
+          border-radius: 100px;
+          font-family: "Raleway", sans-serif;
+          padding: 0.8rem 0;
+          border: 1px solid #adadad;
+        }
+        .bottom {
+          display: flex;
+          justify-content: space-between;
+          padding: 0 1rem;
+        }
+        .copy_btn {
+          border-radius: 100px;
+          font-family: "Raleway", sans-serif;
+          background-color: #fff;
+          font-weight: 400;
+          font-size: 21px;
+          line-height: 25px;
+          border: 1px solid rgb(36, 34, 34);
+          padding: 0.3rem 2.4rem;
+        }
+        .share {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 5px;
+          & span {
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 19px;
+          }
         }
       }
     }
+
     .details {
       img {
         width: 100%;
@@ -210,8 +223,11 @@
   .projectDetails {
     .project_details_card {
       margin: 2rem 8rem;
-      border: 1px solid gray;
       padding: 1rem;
+      filter: drop-shadow(0px 15px 10px rgba(#b3b1b1, 35%));
+      background-color: #fff;
+      border-radius: 0.8rem;
+
       .participate {
         .content {
           flex-direction: row;
@@ -232,6 +248,51 @@
                 padding-left: 1rem;
               }
             }
+          }
+        }
+      }
+      .target_amount {
+        padding-top: 15px;
+        border-top: 1px solid #adadad;
+        .target_desktop {
+          display: flex;
+          flex-direction: column;
+          gap: 20px;
+          padding: 0 1rem;
+          span {
+            font-weight: 700;
+            font-size: 22px;
+            line-height: 28.5px;
+          }
+          .money {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            span {
+              font-weight: 500;
+              font-size: 28px;
+              line-height: 32px;
+            }
+          }
+        }
+        .copy_wrapper {
+          display: flex;
+          flex-direction: row;
+          padding: 2rem 1rem;
+          .bottom {
+            display: flex;
+          }
+          .inputDesktop {
+            display: flex;
+            width: 50%;
+            text-align: center;
+          }
+          .inputMobile {
+            display: none;
+          }
+
+          .share {
+            padding-left: 20px;
           }
         }
       }

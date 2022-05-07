@@ -56,13 +56,27 @@ export default function ProjectDetails() {
           </div>
         </section>
 
-        <section className={styles.copy_wrapper}>
-          <input className={styles.input}></input>
-          <div className={styles.bottom}>
-            <button className={styles.copy_btn}>Copy</button>
-            <div className={styles.share}>
-              <span>Share</span>
-              <img src={share} alt="share" />
+        <section className={styles.target_amount}>
+          <div className={styles.target_desktop}>
+            <span>Target amount</span>
+            <div className={styles.money}>
+              <img src={money} alt="money" />
+              <span>$70,000 / $1,00,000</span>
+            </div>
+          </div>
+          <div className={styles.copy_wrapper}>
+            <input className={styles.inputMobile}></input>
+            <input
+              placeholder="https://vital-dapp.com/mymoneypot"
+              className={styles.inputDesktop}
+            ></input>
+
+            <div className={styles.bottom}>
+              <button className={styles.copy_btn}>Copy</button>
+              <div className={styles.share}>
+                <span>Share</span>
+                <img src={share} alt="share" />
+              </div>
             </div>
           </div>
         </section>

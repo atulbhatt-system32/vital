@@ -1,11 +1,13 @@
 import Home from "pages/Home/Home";
 import Projects from "pages/Projects/Projects";
 import ProjectDetails from "pages/ProjectDetails/ProjectDetails";
+import ProjectDetailsUpload from "pages/ProjectDetailsUpload/ProjectDetailsUpload";
 
 export const routeNames = {
   home: "/",
   projects: "/projects",
   project_details: "/project_details",
+  project_details_upload: "/project_details_upload",
 };
 
 const routes = [
@@ -23,6 +25,11 @@ const routes = [
     path: routeNames.project_details,
     title: "Project Details",
     component: ProjectDetails,
+  },
+  {
+    path: routeNames.project_details_upload,
+    title: "Project Details Upload",
+    component: ProjectDetailsUpload,
   },
 ];
 

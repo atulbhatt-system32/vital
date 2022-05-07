@@ -1,9 +1,11 @@
 import Home from "pages/Home/Home";
 import Projects from "pages/Projects/Projects";
+import ProjectDetails from "pages/ProjectDetails/ProjectDetails";
 
 export const routeNames = {
   home: "/",
   projects: "/projects",
+  project_details: "/project_details",
 };
 
 const routes = [
@@ -16,6 +18,11 @@ const routes = [
     path: routeNames.projects,
     title: "Projects",
     component: Projects,
+  },
+  {
+    path: routeNames.project_details,
+    title: "Project Details",
+    component: ProjectDetails,
   },
 ];
 

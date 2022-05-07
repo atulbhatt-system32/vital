@@ -2,12 +2,11 @@ import { logo } from "assets/img";
 import { Footer, GradientBtn } from "components";
 import { Routes, Route, HashRouter as Router } from "react-router-dom";
 import routes from "routes";
-import ProjectDetails from "./pages/ProjectDetails/ProjectDetails";
+// import ProjectDetails from "./pages/ProjectDetails/ProjectDetails";
 function App() {
   return (
     <div className="App">
-      <ProjectDetails />
-      {/* <header className="App-header">
+      <header className="App-header">
         <nav>
           <div className="nav_mobile">
             <div className="brand_logo_wrapper_mob">
@@ -61,7 +60,7 @@ function App() {
           ))}
         </Routes>
       </Router>
-      <Footer /> */}
+      <Footer />
     </div>
   );
 }

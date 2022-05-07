@@ -1,5 +1,6 @@
 .projectDetails {
   &_participate {
+    padding-bottom: 1rem;
     &_img_wrap {
       // min-height: 250px;
       & img {
@@ -52,6 +53,47 @@
         color: #fff;
         font-family: "Raleway", sans-serif;
         padding: 0.5rem 1.3rem;
+      }
+    }
+  }
+  &_copy {
+    display: flex;
+    flex-direction: column;
+    padding: 4rem 1rem;
+    border-top: 1px solid #adadad;
+    border-bottom: 1px solid #adadad;
+    gap: 10px;
+
+    &_input {
+      border-radius: 100px;
+      font-family: "Raleway", sans-serif;
+      padding: 0.8rem 0;
+      border: 1px solid #adadad;
+    }
+    &_bottom {
+      display: flex;
+      justify-content: space-between;
+      padding: 0 1rem;
+    }
+    &_btn {
+      border-radius: 100px;
+      font-family: "Raleway", sans-serif;
+      background-color: #fff;
+      font-weight: 400;
+      font-size: 21px;
+      line-height: 25px;
+      border: 1px solid #000;
+      padding: 0.3rem 2.4rem;
+    }
+    &_share {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 5px;
+      & span {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 19px;
       }
     }
   }

@@ -21,7 +21,6 @@
         font-weight: 700;
         font-size: 26px;
         line-height: 30.5px;
-        color: #2f455c;
       }
       &_details {
         display: flex;
@@ -104,13 +103,11 @@
     font-weight: 700;
     font-size: 22px;
     line-height: 26px;
-    color: #2f455c;
   }
   &_right {
     font-weight: 400;
     font-size: 22px;
     line-height: 26px;
-    color: #2f455c;
     padding: 0 30px 0 10px;
   }
 }
@@ -122,7 +119,6 @@
     font-weight: 700;
     font-size: 18px;
     line-height: 21px;
-    color: #2f455c;
   }
   &_right {
     display: flex;
@@ -132,7 +128,6 @@
       font-weight: 500;
       font-size: 20px;
       line-height: 24px;
-      color: #2f455c;
       padding-left: 10px;
     }
   }
@@ -146,4 +141,53 @@
 }
 .details_amount_right {
   padding-right: 3.6rem;
+}
+
+section.organizer_wrapper {
+  padding: 1.5rem;
+  border-top: 2px solid #e5e5e5;
+  .organizer_name {
+    font-weight: 700;
+    font-size: 1.5rem;
+    padding-bottom: 1rem;
+  }
+  .organizer_profile {
+    display: flex;
+    align-items: center;
+
+    .organizer_profile_img {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      overflow: hidden;
+      img {
+        max-width: 100%;
+        object-fit: cover;
+      }
+    }
+    .organizer_profile_name {
+      font-weight: 500;
+      padding: 1rem;
+      font-size: 1.5rem;
+    }
+  }
+  .organizer_address {
+    display: flex;
+    align-items: center;
+    &_icon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 80px;
+      height: 80px;
+    }
+    &_wrap {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    &_text {
+      padding: 1rem;
+      font-weight: 500;
+    }
+  }
 }

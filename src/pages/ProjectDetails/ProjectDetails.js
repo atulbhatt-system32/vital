@@ -2,8 +2,6 @@ import React from "react";
 import styles from "./ProjectDetails.module.scss";
 import {
   worker,
-  donation,
-  john,
   location,
   heart,
   person,
@@ -137,6 +135,34 @@ export default function ProjectDetails() {
           scrambled it to make a type specimen book.
         </p>
       </div>
+
+      {/* Organizer */}
+      <section className={styles.organizer_wrapper}>
+        <div className={styles.organizer_name}>
+          <span className={styles.organizer_name_text}>Organizer Name</span>
+        </div>
+        <div className={styles.organizer_profile}>
+          <div className={styles.organizer_profile_img}>
+            <img
+              src="https://preview.keenthemes.com/metronic-v4/theme/assets/pages/media/profile/profile_user.jpg"
+              alt="john"
+            />
+          </div>
+          <div className={styles.organizer_profile_name}>
+            <span className={styles.organizer_profile_name_text}>John Doe</span>
+          </div>
+        </div>
+        <div className={styles.organizer_address}>
+          <div className={styles.organizer_address_icon}>
+            <img src={location} alt="location" />
+          </div>
+          <div className={styles.organizer_address_wrap}>
+            <span className={styles.organizer_address_text}>
+              9473 Rocky River Rd. Raleigh, NC 27603
+            </span>
+          </div>
+        </div>
+      </section>
     </div>
   );
 }

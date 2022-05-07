@@ -18,6 +18,7 @@ body {
   font-family: "Raleway", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  color: var(--primary-text-color);
 }
 
 a {
@@ -45,7 +46,6 @@ button {
   align-items: center;
   padding: 1.5rem;
   position: relative;
-  /* border-bottom: 1px #b2b2b2; {not Applying}*/
 }
 
 /* Added */
